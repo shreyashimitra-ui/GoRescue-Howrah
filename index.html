@@ -93,6 +93,107 @@
         "Latitude: " + latitude +
         " | Longitude: " + longitude;
     });
+    
+    // STEP 3: Create two separate GIS layers
+    const fireStations = L.layerGroup().addTo(map);
+    const hospitals = L.layerGroup().addTo(map);
+
+    // Add layer selection control
+    L.control.layers(null, {
+      "Fire Stations": fireStations,
+      "Hospitals": hospitals
+    }, { collapsed: false }).addTo(map);
+
+    // Search area: Howrah and nearby surroundings
+    // Bounding box: south, west, north, east
+    const query = `
+      [out:json][timeout:25];
+      (
+        nwr["amenity"="fire_station"]
+          (22.52,88.20,22.68,88.36);
+        nwr["amenity"="hospital"]
+          (22.52,88.20,22.68,88.36);
+      );
+      out center;
+    `;
+
+    // Retrieve geographic features from OpenStreetMap
+    async function loadFacilities() {
+      const info = document.getElementById("information");
+      info.textContent = "Loading emergency facilities...";
+
+      try {
+        const url =
+          "https://overpass.kumi.systems/api/interpreter?data="
+          + encodeURIComponent(query);
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error("Server returned " + response.status);
+        }
+
+        const data = await response.json();
+
+        let fireCount = 0;
+        let hospitalCount = 0;
+
+        data.elements.forEach(function(feature) {
+          const lat = feature.lat ?? feature.center?.lat;
+          const lon = feature.lon ?? feature.center?.lon;
+
+          if (lat == null || lon == null) return;
+
+          const tags = feature.tags || {};
+          const isFire = tags.amenity === "fire_station";
+
+          const color = isFire ? "#dc2626" : "#2563eb";
+          const layer = isFire ? fireStations : hospitals;
+
+          const marker = L.circleMarker([lat, lon], {
+            radius: 8,
+            color: "white",
+            weight: 2,
+            fillColor: color,
+            fillOpacity: 0.95
+          });
+
+          // Avoid inserting untrusted OSM text as HTML
+          const name = tags.name || "Unnamed facility";
+
+          const popup = document.createElement("div");
+          const heading = document.createElement("strong");
+          heading.textContent = name;
+          popup.appendChild(heading);
+
+          const category = document.createElement("p");
+          category.textContent = isFire
+            ? "Fire Station"
+            : "Hospital";
+          popup.appendChild(category);
+
+          marker.bindPopup(popup);
+          marker.addTo(layer);
+
+          if (isFire) fireCount++;
+          else hospitalCount++;
+        });
+
+        info.textContent =
+          "OpenStreetMap facilities loaded: " +
+          fireCount + " fire stations and " +
+          hospitalCount + " hospitals.";
+
+      } catch (error) {
+        info.textContent =
+          "Facility data could not be loaded: " +
+          error.message;
+        console.error(error);
+      }
+    }
+
+    loadFacilities();
+
   </script>
 
 </body>
