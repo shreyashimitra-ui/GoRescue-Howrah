@@ -35,7 +35,7 @@ body.focus-mode .layout{grid-template-columns:1fr}body.focus-mode .side-panel{di
 <button id="block-route" class="ghost">🚧 Simulate roadblock</button>
 <button id="detour" class="ghost">↪ Choose detour waypoint</button>
 </div>
-<div id="blocked-hint">ROADBLOCK SIMULATION: First calculate a route, then click Simulate roadblock. To test an alternative, click Choose detour waypoint and click a different road location. This is a hypothetical exercise, not a verified closure.</div><div id="route-status" role="status">INSPECT MODE: Click any feature to see its name and coordinates. To measure or route, select the corresponding tool first.</div>
+<div id="route-details" role="status" aria-live="polite" style="display:none;background:#eff6ff;border:2px solid #2563eb;border-radius:10px;margin:10px 14px;padding:14px;line-height:1.7"></div><div id="blocked-hint">ROADBLOCK SIMULATION: First calculate a route, then click Simulate roadblock. To test an alternative, click Choose detour waypoint and click a different road location. This is a hypothetical exercise, not a verified closure.</div><div id="route-status" role="status">INSPECT MODE: Click any feature to see its name and coordinates. To measure or route, select the corresponding tool first.</div>
 <div class="status" id="data-status">Preparing map layers…</div></section><section class="card"><details open><summary>📍 Map Inspector — name and coordinates</summary><div class="pad"><div id="inspector" class="muted">Click the incident, a facility, or anywhere on the map to inspect its location.</div></div></details></section></div>
 <div class="side-panel"><section class="card pad"><div class="row space"><b>TEAM MISSION CONSOLE</b><span class="timer" id="timer">60:00</span></div><label class="field" for="team">Team name</label><input id="team" placeholder="Registered team name" readonly><div id="participants-display" class="participants-display"></div><div class="row space" style="margin-top:13px"><span id="step-label" class="counter">Mission 1 of 5</span><span id="points" class="score">10 points</span></div><div class="progress"><div id="bar" style="width:20%"></div></div><div id="mission-content"></div><label class="field" for="answer">Your team's evidence-based answer</label><textarea id="answer" placeholder="Write your decision and explain your evidence..."></textarea><div class="row space" style="margin-top:12px"><button id="prev" class="ghost">← Previous</button><button id="next">Next mission →</button></div><div class="notice" style="font-size:13px">Answers are saved while this page remains open. Download your team report before closing or refreshing the tab.</div><div id="assessment"><h3>Automatic evidence check</h3><p class="muted">Select evidence-based answers. The system scores verifiable map actions and these objective decisions; it cannot reliably judge free-text reasoning.</p>
 <label>1. Incident latitude (decimal degrees)</label><input id="lat-answer" type="number" step="any" placeholder="Enter latitude from map">
@@ -144,17 +144,40 @@ async function routeToFacility(layer,feature,label){
  const requestId=++routeRequestId;
  const dest=layer.getLatLng ? layer.getLatLng() : layer.getBounds().getCenter();const routeCategory=label==='Fire station'?'fire':'hospital';
  const name=inspectName(feature);
- routeStatus.textContent='Calculating road route to '+name+'…';
+ routeStatus.textContent='Calculating road route to '+name+'…';$('route-details').style.display='none';
  try{
-   const waypoint=detourPoint?';'+detourPoint.lng+','+detourPoint.lat:'';const url='https://router.project-osrm.org/route/v1/driving/'+INCIDENT[1]+','+INCIDENT[0]+waypoint+';'+dest.lng+','+dest.lat+'?overview=full&geometries=geojson';
+   const waypoint=detourPoint?';'+detourPoint.lng+','+detourPoint.lat:'';const url='https://router.project-osrm.org/route/v1/driving/'+INCIDENT[1]+','+INCIDENT[0]+waypoint+';'+dest.lng+','+dest.lat+'?overview=full&geometries=geojson&steps=true';
    const response=await fetch(url);if(!response.ok)throw Error('Routing service HTTP '+response.status);
    const data=await response.json();if(data.code!=='Ok'||!data.routes?.length)throw Error('No connected driving route returned');
    if(toolMode!=='route'||requestId!==routeRequestId)return;
    const route=data.routes[0];if(routeLine)map.removeLayer(routeLine);
    routeLine=L.geoJSON(route.geometry,{style:{color:'#7c3aed',weight:6,opacity:.8}}).addTo(map);
-   map.fitBounds(routeLine.getBounds(),{padding:[35,35]});lastRoute={dest,name,label,geometry:route.geometry,km:route.distance/1000};if(detourPoint){detourTested=true;}else{routeEvidence[routeCategory].set(dest.lat.toFixed(5)+','+dest.lng.toFixed(5),{name,km:route.distance/1000});}updateRouteHistory();showRouteToast(name,route.distance/1000,Math.round(route.duration/60),!!detourPoint);
+   map.fitBounds(routeLine.getBounds(),{padding:[35,35]});lastRoute={dest,name,label,geometry:route.geometry,km:route.distance/1000};if(detourPoint){detourTested=true;}else{routeEvidence[routeCategory].set(dest.lat.toFixed(5)+','+dest.lng.toFixed(5),{name,km:route.distance/1000});}updateRouteHistory();showRouteDetails(name,route,!!detourPoint);showRouteToast(name,route.distance/1000,Math.round(route.duration/60),!!detourPoint);
    routeStatus.textContent='Suggested driving route to '+name+': '+(route.distance/1000).toFixed(2)+' km; modelled travel time '+Math.round(route.duration/60)+' min. Demonstration only: no live traffic, road closures or emergency-vehicle access.';
  }catch(e){if(requestId!==routeRequestId)return;routeStatus.textContent='Could not calculate a road route: '+e.message+'. You can still trace a possible road manually with Measure.';console.warn(e)}
+}
+function showRouteDetails(name,route,isDetour){
+ const km=route.distance/1000;
+ const minutes=route.duration/60;
+ const avg=route.duration>0?(route.distance/1000)/(route.duration/3600):null;
+ const names=[...new Set((route.legs||[]).flatMap(leg=>(leg.steps||[]).map(step=>step.name).filter(Boolean)))].slice(0,8);
+ const el=$('route-details');el.replaceChildren();el.style.display='block';
+ const heading=document.createElement('strong');heading.textContent=(isDetour?'DETOUR TEST: ':'ROAD ROUTE: ')+name;el.appendChild(heading);
+ const fields=[
+  'Road-route distance: '+km.toFixed(2)+' km',
+  'Modelled travel time: '+minutes.toFixed(1)+' minutes',
+  'Average modelled route speed: '+(avg===null?'Unavailable':avg.toFixed(1)+' km/h'),
+  'Road names along route: '+(names.length?names.join(' → '):'Not available from routing data'),
+  'Lane count / lane type: Not available from this routing service',
+  'Road classification: Not supplied reliably for the complete route',
+  'Average speed is calculated as route distance ÷ modelled duration; it is NOT a measured vehicle speed or live traffic speed.',
+  'Educational simulation only. The router does not account for emergency vehicle priority or the fictional roadblock.'
+ ];
+ for(const value of fields){const line=document.createElement('div');line.textContent=value;el.appendChild(line)}
+ const popup=document.createElement('div');
+ const title=document.createElement('strong');title.textContent='ROUTE DETAILS';popup.appendChild(title);
+ for(const value of fields.slice(0,5)){const row=document.createElement('div');row.textContent=value;popup.appendChild(row)}
+ routeLine.bindPopup(popup,{maxWidth:350}).openPopup();
 }
 let choosingDetour=false;
 function showRouteToast(name,km,minutes,isDetour){const el=$('route-toast');el.textContent=(isDetour?'DETOUR TEST — ':'ROAD ROUTE — ')+name+': '+km.toFixed(2)+' km | modelled '+minutes+' min (no live traffic)';el.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.style.display='none',9000)}
