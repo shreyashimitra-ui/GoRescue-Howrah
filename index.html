@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -8,10 +9,11 @@
 
   <title>GeoRescue Howrah</title>
 
-  <!-- Leaflet map library -->
+  <!-- Leaflet CSS -->
   <link rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
+  <!-- Leaflet JavaScript -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
@@ -26,19 +28,48 @@
     header {
       background: #16324f;
       color: white;
-      padding: 20px;
+      padding: 18px 24px;
     }
 
-    h1 { margin: 0; }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    header p {
+      margin-bottom: 0;
+    }
 
     #map {
-      height: 75vh;
       width: 100%;
+      height: 72vh;
     }
 
     #information {
-      padding: 15px;
       background: white;
+      padding: 16px 24px;
+      font-size: 15px;
+    }
+
+    .legend {
+      background: white;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px #999;
+      line-height: 25px;
+    }
+
+    .legend-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .legend-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 7px;
     }
   </style>
 </head>
@@ -47,22 +78,28 @@
 
   <header>
     <h1>GeoRescue Howrah</h1>
-    <p>Fire and Emergency Response GIS Dashboard</p>
+    <p>
+      Interactive Fire and Emergency Response
+      Intelligence Dashboard
+    </p>
   </header>
 
   <div id="map"></div>
 
   <div id="information">
-    Click anywhere on the map to view coordinates.
+    Loading emergency facility data...
   </div>
 
   <script>
-    // Create map centred on Howrah
+
+    // --------------------------------
+    // 1. CREATE THE MAP
+    // --------------------------------
+
     const map = L.map("map").setView(
-      [22.5958, 88.2636], 14
+      [22.5958, 88.2636], 13
     );
 
-    // Add real OpenStreetMap background
     L.tileLayer(
       "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
       {
@@ -72,127 +109,230 @@
       }
     ).addTo(map);
 
-    // Add a fictional fire incident
-    const fire = L.marker(
+
+    // --------------------------------
+    // 2. SIMULATED FIRE INCIDENT
+    // --------------------------------
+
+    const fireIncident = L.marker(
       [22.5958, 88.2636]
     ).addTo(map);
 
-    fire.bindPopup(
-      "<b>Simulated Fire Incident</b><br>" +
-      "Emergency training location"
+    fireIncident.bindPopup(
+      "<b>SIMULATED FIRE INCIDENT</b><br>" +
+      "Training demonstration only"
     );
 
-    // Display coordinates when clicked
-    map.on("click", function(event) {
-      const latitude = event.latlng.lat.toFixed(5);
-      const longitude = event.latlng.lng.toFixed(5);
 
-      document.getElementById(
-        "information"
-      ).textContent =
-        "Latitude: " + latitude +
-        " | Longitude: " + longitude;
-    });
-    
-    // STEP 3: Create two separate GIS layers
+    // --------------------------------
+    // 3. CREATE GIS LAYERS
+    // --------------------------------
+
     const fireStations = L.layerGroup().addTo(map);
     const hospitals = L.layerGroup().addTo(map);
 
-    // Add layer selection control
+
+    // --------------------------------
+    // 4. LAYER SELECTION CONTROL
+    // --------------------------------
+
     L.control.layers(null, {
       "Fire Stations": fireStations,
       "Hospitals": hospitals
-    }, { collapsed: false }).addTo(map);
+    }, {
+      collapsed: false
+    }).addTo(map);
 
-    // Search area: Howrah and nearby surroundings
-    // Bounding box: south, west, north, east
-    const query = `
-      [out:json][timeout:25];
-      (
-        nwr["amenity"="fire_station"]
-          (22.52,88.20,22.68,88.36);
-        nwr["amenity"="hospital"]
-          (22.52,88.20,22.68,88.36);
-      );
-      out center;
-    `;
 
-    // Retrieve geographic features from OpenStreetMap
+    // --------------------------------
+    // 5. MAP LEGEND
+    // --------------------------------
+
+    const legend = L.control({
+      position: "bottomright"
+    });
+
+    legend.onAdd = function() {
+      const div = L.DomUtil.create("div", "legend");
+
+      div.innerHTML = `
+        <div class="legend-title">Map Legend</div>
+
+        <div>
+          <span class="legend-dot"
+                style="background:#dc2626"></span>
+          Fire Station
+        </div>
+
+        <div>
+          <span class="legend-dot"
+                style="background:#2563eb"></span>
+          Hospital
+        </div>
+
+        <div>
+          📍 Simulated Fire Incident
+        </div>
+      `;
+
+      return div;
+    };
+
+    legend.addTo(map);
+
+
+    // --------------------------------
+    // 6. LOAD SAVED GEOJSON DATA
+    // --------------------------------
+
     async function loadFacilities() {
-      const info = document.getElementById("information");
-      info.textContent = "Loading emergency facilities...";
+
+      const info = document.getElementById(
+        "information"
+      );
 
       try {
-        const url =
-  "https://overpass-api.de/api/interpreter?data="
-  + encodeURIComponent(query);
 
-        const response = await fetch(url);
+        const response = await fetch(
+          "./emergency_facilities.geojson"
+        );
 
         if (!response.ok) {
-          throw new Error("Server returned " + response.status);
+          throw new Error(
+            "GeoJSON file not found (HTTP " +
+            response.status + ")"
+          );
         }
 
         const data = await response.json();
 
+        if (data.type !== "FeatureCollection" ||
+            !Array.isArray(data.features)) {
+          throw new Error(
+            "File must contain a GeoJSON FeatureCollection"
+          );
+        }
+
         let fireCount = 0;
         let hospitalCount = 0;
 
-        data.elements.forEach(function(feature) {
-          const lat = feature.lat ?? feature.center?.lat;
-          const lon = feature.lon ?? feature.center?.lon;
+        // Read features from GeoJSON
+        L.geoJSON(data, {
 
-          if (lat == null || lon == null) return;
+          filter: function(feature) {
+            const amenity =
+              feature.properties?.amenity;
 
-          const tags = feature.tags || {};
-          const isFire = tags.amenity === "fire_station";
+            return amenity === "fire_station" ||
+                   amenity === "hospital";
+          },
 
-          const color = isFire ? "#dc2626" : "#2563eb";
-          const layer = isFire ? fireStations : hospitals;
+          pointToLayer: function(feature, latlng) {
 
-          const marker = L.circleMarker([lat, lon], {
-            radius: 8,
-            color: "white",
-            weight: 2,
-            fillColor: color,
-            fillOpacity: 0.95
-          });
+            const isFire =
+              feature.properties?.amenity ===
+              "fire_station";
 
-          // Avoid inserting untrusted OSM text as HTML
-          const name = tags.name || "Unnamed facility";
+            const color = isFire
+              ? "#dc2626"
+              : "#2563eb";
 
-          const popup = document.createElement("div");
-          const heading = document.createElement("strong");
-          heading.textContent = name;
-          popup.appendChild(heading);
+            return L.circleMarker(latlng, {
+              radius: 8,
+              color: "white",
+              weight: 2,
+              fillColor: color,
+              fillOpacity: 0.95
+            });
+          },
 
-          const category = document.createElement("p");
-          category.textContent = isFire
-            ? "Fire Station"
-            : "Hospital";
-          popup.appendChild(category);
+          onEachFeature: function(feature, layer) {
 
-          marker.bindPopup(popup);
-          marker.addTo(layer);
+            const properties =
+              feature.properties || {};
 
-          if (isFire) fireCount++;
-          else hospitalCount++;
+            const isFire =
+              properties.amenity === "fire_station";
+
+            const targetLayer = isFire
+              ? fireStations
+              : hospitals;
+
+            const popup = document.createElement(
+              "div"
+            );
+
+            const heading = document.createElement(
+              "strong"
+            );
+
+            heading.textContent =
+              properties.name || "Unnamed facility";
+
+            const category = document.createElement(
+              "p"
+            );
+
+            category.textContent = isFire
+              ? "Fire Station"
+              : "Hospital";
+
+            popup.appendChild(heading);
+            popup.appendChild(category);
+
+            layer.bindPopup(popup);
+
+            // Add each feature to its thematic layer
+            layer.addTo(targetLayer);
+
+            if (isFire) {
+              fireCount++;
+            } else {
+              hospitalCount++;
+            }
+          }
+
         });
 
         info.textContent =
-          "OpenStreetMap facilities loaded: " +
+          "Saved OpenStreetMap data loaded: " +
           fireCount + " fire stations and " +
-          hospitalCount + " hospitals.";
+          hospitalCount + " hospitals. " +
+          "Click a facility for details.";
 
       } catch (error) {
+
         info.textContent =
-          "Facility data could not be loaded: " +
+          "Unable to load emergency facilities: " +
           error.message;
+
         console.error(error);
       }
     }
 
     loadFacilities();
+
+
+    // --------------------------------
+    // 7. CLICK MAP TO VIEW COORDINATES
+    // --------------------------------
+
+    map.on("click", function(event) {
+
+      const latitude =
+        event.latlng.lat.toFixed(5);
+
+      const longitude =
+        event.latlng.lng.toFixed(5);
+
+      document.getElementById(
+        "information"
+      ).textContent =
+        "Selected location — Latitude: " +
+        latitude +
+        " | Longitude: " +
+        longitude;
+    });
 
   </script>
 
