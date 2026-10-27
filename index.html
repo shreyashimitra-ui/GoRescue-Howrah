@@ -1,340 +1,888 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoRescue Howrah | Operation Red Alert</title>
 
-  <title>GeoRescue Howrah</title>
+<link rel="stylesheet"
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-  <!-- Leaflet JavaScript -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-  </script>
+<style>
+:root {
+  --navy:#10243d;
+  --blue:#1d4ed8;
+  --red:#dc2626;
+  --light:#f1f5f9;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:#172334;
+}
+header {
+  background:linear-gradient(110deg,#10243d,#174e76);
+  color:white;
+  padding:17px 24px;
+}
+header h1 { margin:0 0 5px; font-size:27px; }
+header p { margin:0; opacity:.9; font-size:14px; }
+.topline {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  align-items:center;
+  margin-top:13px;
+}
+.tag {
+  background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:20px;
+  padding:6px 11px;
+  font-size:12px;
+}
+.simulated { background:#8a1d24; }
+button {
+  border:0;
+  border-radius:7px;
+  padding:11px 15px;
+  font-size:14px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.primary { background:#facc15; color:#172334; }
+.secondary { background:#e2e8f0; color:#172334; }
+button:hover { filter:brightness(.95); }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f5f9;
-    }
+main { max-width:1500px; margin:auto; padding:15px; }
+.panel {
+  background:white;
+  border-radius:12px;
+  box-shadow:0 2px 10px #14263a12;
+  margin-bottom:13px;
+  overflow:hidden;
+}
+.panel-inner { padding:17px; }
+.panel h2 { font-size:19px; margin:0 0 10px; }
 
-    header {
-      background: #16324f;
-      color: white;
-      padding: 18px 24px;
-    }
+details summary {
+  padding:16px;
+  cursor:pointer;
+  font-weight:bold;
+  background:#eaf1f9;
+  font-size:17px;
+}
+details[open] summary { border-bottom:1px solid #d4e0eb; }
+details .panel-inner { line-height:1.65; }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+.mission-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:12px;
+  margin:15px 0;
+}
+.mission-card {
+  background:#f4f7fb;
+  border-left:4px solid #2563eb;
+  padding:14px;
+  border-radius:7px;
+}
+.mission-card h3 { margin:0 0 7px; font-size:15px; }
+.mission-card p { margin:0; font-size:14px; }
 
-    header p {
-      margin-bottom: 0;
-    }
-
-    #map {
-      width: 100%;
-      height: 72vh;
-    }
-
-    #information {
-      background: white;
-      padding: 16px 24px;
-      font-size: 15px;
-    }
-
-    .legend {
-      background: white;
-      padding: 12px;
-      border-radius: 6px;
-      box-shadow: 0 1px 6px #999;
-      line-height: 25px;
-    }
-
-    .legend-title {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .legend-dot {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      margin-right: 7px;
-    }
-  </style>
+#map { width:100%; height:62vh; min-height:440px; }
+.map-caption {
+  padding:11px 16px;
+  background:#fff;
+  font-size:13px;
+  line-height:1.5;
+}
+#status { font-weight:bold; }
+#selection {
+  padding:13px;
+  background:#eff6ff;
+  border-radius:8px;
+  line-height:1.5;
+  font-size:14px;
+}
+.legend {
+  background:white;
+  padding:12px;
+  border-radius:9px;
+  box-shadow:0 1px 8px #0003;
+  line-height:1.9;
+  font-size:12px;
+  max-height:310px;
+  overflow:auto;
+}
+.legend-title { font-weight:bold; font-size:14px; }
+.swatch {
+  display:inline-block;
+  width:13px;
+  height:13px;
+  vertical-align:middle;
+  margin-right:7px;
+  border:1px solid #ffffff;
+}
+.circle { border-radius:50%; }
+.diamond { transform:rotate(45deg) scale(.8); }
+.triangle {
+  width:0;height:0;
+  border-left:7px solid transparent;
+  border-right:7px solid transparent;
+  border-bottom:14px solid #f97316;
+  border-top:0;
+  background:none !important;
+}
+.line-swatch {
+  display:inline-block;
+  width:23px;
+  height:4px;
+  vertical-align:middle;
+  margin-right:7px;
+}
+.info-note {
+  font-size:12px;
+  color:#475569;
+  line-height:1.6;
+}
+.score-table {
+  border-collapse:collapse;
+  width:100%;
+  font-size:14px;
+}
+.score-table th,.score-table td {
+  padding:9px;
+  border-bottom:1px solid #e2e8f0;
+  text-align:left;
+}
+.score-table th { background:#edf3fa; }
+footer {
+  padding:16px;
+  text-align:center;
+  font-size:12px;
+  color:#64748b;
+}
+#overlay {
+  position:fixed;
+  inset:0;
+  background:rgba(6,19,38,.93);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:9999;
+}
+.welcome {
+  background:linear-gradient(145deg,#142d4b,#103b59);
+  color:white;
+  width:min(620px,100%);
+  border:1px solid #4b6a8d;
+  border-radius:18px;
+  padding:30px;
+  text-align:center;
+  box-shadow:0 20px 70px #0006;
+  animation:appear .7s ease-out;
+}
+.welcome h1 { font-size:clamp(26px,5vw,40px); margin:12px 0; }
+.welcome p { line-height:1.65; }
+.welcome .eyebrow {
+  color:#facc15;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+}
+.countdown-label {
+  font-size:23px;
+  font-weight:bold;
+  color:#facc15;
+  margin:18px 0;
+}
+@keyframes appear {
+  from { opacity:0; transform:translateY(20px); }
+  to { opacity:1; transform:translateY(0); }
+}
+.beacon {
+  width:22px;
+  height:22px;
+  background:#ef4444;
+  border:3px solid white;
+  border-radius:50%;
+  box-shadow:0 0 0 rgba(239,68,68,.6);
+  animation:pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow:0 0 0 0 rgba(239,68,68,.7); }
+  70% { box-shadow:0 0 0 22px rgba(239,68,68,0); }
+  100% { box-shadow:0 0 0 0 rgba(239,68,68,0); }
+}
+@media(max-width:700px) {
+  header h1 { font-size:22px; }
+  #map { height:65vh; }
+  .leaflet-control-layers { font-size:11px; }
+  .legend { max-width:150px; }
+  .welcome { padding:20px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation:none !important; }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>GeoRescue Howrah</h1>
+<div id="overlay" role="dialog" aria-modal="true"
+ aria-labelledby="welcomeTitle">
+  <div class="welcome">
+    <div class="eyebrow">GEOINTELLIGENCE CHALLENGE</div>
+    <h1 id="welcomeTitle">OPERATION RED ALERT</h1>
+    <h2>GeoRescue Howrah</h2>
     <p>
-      Interactive Fire and Emergency Response
-      Intelligence Dashboard
+      A fire has been reported. The city is waiting.
+      You are the Emergency Intelligence Team.
     </p>
-  </header>
+    <p>
+      Real mapped infrastructure. A fictional emergency.
+      One critical mission: make the smartest decision
+      using evidence.
+    </p>
+    <div class="countdown-label">
+      YOUR MISSION: 60 MINUTES
+    </div>
+    <p style="font-size:13px">
+      No GIS experience required. Bring curiosity,
+      observation, logic and teamwork.
+    </p>
+    <button class="primary" id="startButton">
+      ACCEPT THE MISSION
+    </button>
+    <p style="font-size:11px;opacity:.75">
+      Educational simulation only. Not an operational
+      emergency-response service.
+    </p>
+  </div>
+</div>
+
+<header>
+  <h1>GeoRescue Howrah</h1>
+  <p>Operation Red Alert | Emergency Intelligence Challenge</p>
+  <div class="topline">
+    <span class="tag simulated">SIMULATED INCIDENT</span>
+    <span class="tag">Real OpenStreetMap Features</span>
+    <span class="tag">Class XII Challenge</span>
+    <span class="tag">Team Intelligence Mission</span>
+  </div>
+</header>
+
+<main>
+
+<section class="panel">
+  <details id="missionBrief">
+    <summary>
+      OPEN MISSION BRIEF — Problem Statement,
+      Objectives and Scoring
+    </summary>
+    <div class="panel-inner">
+
+      <h2>The Emergency: One City. Many Decisions.</h2>
+
+      <p>
+        It is a busy working day in Howrah.
+        The emergency control room receives a report
+        of a fire near a densely used urban area.
+        The report is fictional, but the geographic
+        challenge is realistic.
+      </p>
+
+      <p>
+        Fire stations, hospitals, educational
+        institutions, petrol pumps, roads and water
+        bodies are distributed across the city.
+        Some facilities are close to the incident;
+        others may be easier or harder to reach.
+      </p>
+
+      <p>
+        Your team has access to a digital intelligence
+        map. However, the map does not tell you
+        everything. It does not know current traffic,
+        actual fire-engine availability, hospital
+        capacity or whether a road is blocked.
+      </p>
+
+      <p>
+        <strong>Your challenge:</strong>
+        Make the best defensible emergency-response
+        recommendation, identify risks, and explain
+        what additional information you would need
+        before sending responders.
+      </p>
+
+      <div class="mission-grid">
+
+        <div class="mission-card">
+          <h3>MISSION 1 — Locate</h3>
+          <p>
+            Identify the simulated incident and examine
+            the surrounding area. What makes this
+            location potentially vulnerable?
+          </p>
+        </div>
+
+        <div class="mission-card">
+          <h3>MISSION 2 — Rescue Intelligence</h3>
+          <p>
+            Identify two candidate fire stations and
+            one candidate hospital. Explain why each
+            deserves consideration.
+          </p>
+        </div>
+
+        <div class="mission-card">
+          <h3>MISSION 3 — Hidden Risks</h3>
+          <p>
+            Investigate nearby schools, fuel stations,
+            water bodies and roads. Which mapped
+            features could affect the response?
+          </p>
+        </div>
+
+        <div class="mission-card">
+          <h3>MISSION 4 — The Decision</h3>
+          <p>
+            Recommend a response strategy and a
+            possible access corridor. Explain what
+            cannot be confirmed from the map alone.
+          </p>
+        </div>
+
+        <div class="mission-card">
+          <h3>BONUS — The Twist</h3>
+          <p>
+            Suppose the most obvious access road is
+            blocked. How would you reconsider your
+            response? What evidence would you request?
+          </p>
+        </div>
+
+      </div>
+
+      <h2>What Your Team Must Submit</h2>
+      <p>
+        Prepare a short evidence-based briefing
+        containing:
+      </p>
+      <ol>
+        <li>The incident location and nearby risk factors.</li>
+        <li>Two candidate fire stations and one hospital.</li>
+        <li>A proposed access approach, clearly marked as unverified.</li>
+        <li>Three reasons supporting your decision.</li>
+        <li>Two critical pieces of missing information.</li>
+        <li>Your answer to the blocked-road challenge.</li>
+      </ol>
+
+      <h2>Competition Scoring — 100 Points</h2>
+      <table class="score-table">
+        <tr><th>Assessment</th><th>Points</th></tr>
+        <tr><td>Observation and evidence</td><td>20</td></tr>
+        <tr><td>Facility selection and justification</td><td>20</td></tr>
+        <tr><td>Identification of risks</td><td>20</td></tr>
+        <tr><td>Logical response strategy</td><td>20</td></tr>
+        <tr><td>Adaptation to the surprise scenario</td><td>10</td></tr>
+        <tr><td>Clarity of team presentation</td><td>10</td></tr>
+      </table>
+
+      <p class="info-note">
+        Important: Students are assessed on reasoning,
+        not on whether they know GIS terminology.
+        A visually nearest facility is not necessarily
+        the fastest or most suitable responder.
+      </p>
+
+    </div>
+  </details>
+</section>
+
+<section class="panel">
+  <div class="panel-inner">
+    <h2>Emergency Intelligence Map</h2>
+    <p style="margin:0;font-size:14px">
+      Use the layer controls to explore the city.
+      Click any facility for information.
+      Click the map to inspect geographic coordinates.
+    </p>
+  </div>
 
   <div id="map"></div>
 
-  <div id="information">
-    Loading emergency facility data...
+  <div class="map-caption">
+    <span id="status">Loading map data...</span>
   </div>
+</section>
 
-  <script>
+<section class="panel">
+  <div class="panel-inner">
+    <h2>Intelligence Inspector</h2>
+    <div id="selection">
+      Click a map symbol to inspect its attributes,
+      or click the map to obtain coordinates.
+    </div>
+  </div>
+</section>
 
-    // --------------------------------
-    // 1. CREATE THE MAP
-    // --------------------------------
+<section class="panel">
+  <div class="panel-inner">
+    <h2>Scientific Thinking Challenge</h2>
+    <p>
+      <strong>Physics:</strong> How could road width,
+      travel speed and congestion influence response time?
+    </p>
+    <p>
+      <strong>Chemistry:</strong> Why might a fuel station
+      near a fire require special precautions?
+    </p>
+    <p>
+      <strong>Biology:</strong> Why do hospitals,
+      population exposure and vulnerable people matter?
+    </p>
+    <p>
+      <strong>Mathematics:</strong> Why is straight-line
+      distance different from road-network distance?
+    </p>
+    <p>
+      <strong>Geospatial Intelligence:</strong>
+      How can all these observations be combined
+      into one defensible decision?
+    </p>
+  </div>
+</section>
 
-    const map = L.map("map").setView(
-      [22.5958, 88.2636], 13
-    );
+</main>
 
-    L.tileLayer(
-      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-      {
-        maxZoom: 19,
-        attribution:
-          '&copy; OpenStreetMap contributors'
-      }
-    ).addTo(map);
+<footer>
+  GeoRescue Howrah | Educational GIS Simulation
+  <br>
+  Map data: OpenStreetMap contributors.
+  Facilities and road information may be incomplete
+  or outdated. Do not use for real emergencies.
+</footer>
 
+<script>
+// ------------------------------------------------
+// 1. WELCOME
+// ------------------------------------------------
+document.getElementById("startButton")
+  .addEventListener("click",function(){
+    document.getElementById("overlay").style.display="none";
+    document.getElementById("missionBrief").open=true;
+    setTimeout(()=>map.invalidateSize(),150);
+  });
 
-    // --------------------------------
-    // 2. SIMULATED FIRE INCIDENT
-    // --------------------------------
+// ------------------------------------------------
+// 2. MAP
+// ------------------------------------------------
+const map=L.map("map").setView([22.5958,88.2636],13);
 
-    const fireIncident = L.marker(
-      [22.5958, 88.2636]
-    ).addTo(map);
+L.tileLayer(
+  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  {
+    maxZoom:19,
+    attribution:"&copy; OpenStreetMap contributors"
+  }
+).addTo(map);
 
-    fireIncident.bindPopup(
-      "<b>SIMULATED FIRE INCIDENT</b><br>" +
-      "Training demonstration only"
-    );
+// ------------------------------------------------
+// 3. THEMATIC LAYERS
+// ------------------------------------------------
+const fireStations=L.layerGroup().addTo(map);
+const hospitals=L.layerGroup().addTo(map);
+const roadsBridges=L.layerGroup();
+const schoolsColleges=L.layerGroup();
+const petrolPumps=L.layerGroup();
+const policeStations=L.layerGroup();
+const waterBodies=L.layerGroup();
+const sheltersOpenSpaces=L.layerGroup();
 
+const overlayLayers={
+  "Fire Stations":fireStations,
+  "Hospitals":hospitals,
+  "Roads and Bridges":roadsBridges,
+  "Schools and Colleges":schoolsColleges,
+  "Petrol Pumps":petrolPumps,
+  "Police Stations":policeStations,
+  "Water Bodies":waterBodies,
+  "Shelters and Open Spaces":sheltersOpenSpaces
+};
 
-    // --------------------------------
-    // 3. CREATE GIS LAYERS
-    // --------------------------------
+L.control.layers(
+  null,
+  overlayLayers,
+  {collapsed:true,position:"topright"}
+).addTo(map);
 
-    const fireStations = L.layerGroup().addTo(map);
-    const hospitals = L.layerGroup().addTo(map);
+// ------------------------------------------------
+// 4. CUSTOM SYMBOLS
+// ------------------------------------------------
+function symbolIcon(shape,color,letter){
+  const common=`
+    width:28px;
+    height:28px;
+    background:${color};
+    border:2px solid white;
+    box-shadow:0 2px 6px #0005;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+  `;
 
+  let shapeCSS="border-radius:5px;";
+  let inner=letter;
 
-    // --------------------------------
-    // 4. LAYER SELECTION CONTROL
-    // --------------------------------
+  if(shape==="circle"){
+    shapeCSS="border-radius:50%;";
+  }
+  if(shape==="diamond"){
+    shapeCSS="border-radius:4px;transform:rotate(45deg);";
+    inner=`<span style="transform:rotate(-45deg)">${letter}</span>`;
+  }
+  if(shape==="triangle"){
+    shapeCSS="border-radius:5px 5px 12px 12px;";
+  }
 
-    L.control.layers(null, {
-      "Fire Stations": fireStations,
-      "Hospitals": hospitals
-    }, {
-      collapsed: false
-    }).addTo(map);
+  return L.divIcon({
+    className:"",
+    html:`<div style="${common}${shapeCSS}">${inner}</div>`,
+    iconSize:[32,32],
+    iconAnchor:[16,16]
+  });
+}
 
+const icons={
+  fire:symbolIcon("square","#dc2626","F"),
+  hospital:symbolIcon("circle","#2563eb","+"),
+  school:symbolIcon("diamond","#9333ea","S"),
+  fuel:symbolIcon("triangle","#f97316","!"),
+  police:symbolIcon("square","#0d9488","P"),
+  shelter:symbolIcon("circle","#16a34a","A")
+};
 
-    // --------------------------------
-    // 5. MAP LEGEND
-    // --------------------------------
+// ------------------------------------------------
+// 5. SIMULATED INCIDENT + ANIMATION
+// ------------------------------------------------
+const incidentLat=22.5958;
+const incidentLng=88.2636;
 
-    const legend = L.control({
-      position: "bottomright"
-    });
+const incidentIcon=L.divIcon({
+  className:"",
+  html:'<div class="beacon"></div>',
+  iconSize:[22,22],
+  iconAnchor:[11,11]
+});
 
-    legend.onAdd = function() {
-      const div = L.DomUtil.create("div", "legend");
+const incident=L.marker(
+  [incidentLat,incidentLng],
+  {icon:incidentIcon,zIndexOffset:1000}
+).addTo(map);
 
-      div.innerHTML = `
-        <div class="legend-title">Map Legend</div>
+incident.bindPopup(
+  "<b>SIMULATED FIRE INCIDENT</b><br>" +
+  "Operation Red Alert training scenario.<br>" +
+  "Not a real emergency."
+);
 
-        <div>
-          <span class="legend-dot"
-                style="background:#dc2626"></span>
-          Fire Station
-        </div>
+L.circle([incidentLat,incidentLng],{
+  radius:350,
+  color:"#ef4444",
+  weight:2,
+  fillColor:"#ef4444",
+  fillOpacity:0.08,
+  dashArray:"6,6"
+}).addTo(map).bindPopup(
+  "Illustrative 350 m investigation zone. " +
+  "This is not a measured hazard or evacuation zone."
+);
 
-        <div>
-          <span class="legend-dot"
-                style="background:#2563eb"></span>
-          Hospital
-        </div>
+// ------------------------------------------------
+// 6. SAFE FEATURE INFORMATION
+// ------------------------------------------------
+function featureName(p){
+  return p.name || p["name:en"] || "Unnamed mapped feature";
+}
 
-        <div>
-          📍 Simulated Fire Incident
-        </div>
-      `;
+function showInspector(title,details){
+  const box=document.getElementById("selection");
+  box.replaceChildren();
 
-      return div;
-    };
+  const heading=document.createElement("strong");
+  heading.textContent=title;
+  box.appendChild(heading);
 
-    legend.addTo(map);
+  details.forEach(item=>{
+    const p=document.createElement("p");
+    p.style.margin="7px 0 0";
+    p.textContent=item;
+    box.appendChild(p);
+  });
+}
 
+function bindInformation(layer,feature,type){
+  const p=feature.properties||{};
+  const name=featureName(p);
 
-    // --------------------------------
-    // 6. LOAD SAVED GEOJSON DATA
-    // --------------------------------
+  const popup=document.createElement("div");
+  const strong=document.createElement("strong");
+  strong.textContent=name;
+  popup.appendChild(strong);
 
-    async function loadFacilities() {
+  const description=document.createElement("div");
+  description.textContent="Layer: "+type;
+  popup.appendChild(description);
 
-      const info = document.getElementById(
-        "information"
-      );
+  if(p.address){
+    const address=document.createElement("div");
+    address.textContent=String(p.address);
+    popup.appendChild(address);
+  }
 
-      try {
+  layer.bindPopup(popup);
 
-        const response = await fetch(
-          "./emergency_facilities.geojson"
-        );
+  layer.on("click",()=>{
+    showInspector(name,[
+      "Category: "+type,
+      "Mapped feature ID: "+String(p["@id"]||feature.id||"Not available"),
+      "Source: saved OpenStreetMap GeoJSON.",
+      "This location has not been operationally verified."
+    ]);
+  });
+}
 
-        if (!response.ok) {
-          throw new Error(
-            "GeoJSON file not found (HTTP " +
-            response.status + ")"
-          );
-        }
+// ------------------------------------------------
+// 7. GEOJSON POINT HANDLING
+// ------------------------------------------------
+function addPointFeature(feature,target,icon,type){
+  const geoLayer=L.geoJSON(feature,{
+    pointToLayer:(f,latlng)=>
+      L.marker(latlng,{icon:icon}),
+    onEachFeature:(f,layer)=>{
+      bindInformation(layer,f,type);
+    }
+  });
 
-        const data = await response.json();
+  geoLayer.addTo(target);
+}
 
-        if (data.type !== "FeatureCollection" ||
-            !Array.isArray(data.features)) {
-          throw new Error(
-            "File must contain a GeoJSON FeatureCollection"
-          );
-        }
+function addStyledFeature(feature,target,style,type){
+  L.geoJSON(feature,{
+    style:()=>style,
+    pointToLayer:(f,latlng)=>
+      L.circleMarker(latlng,{
+        radius:5,
+        color:style.color||"#64748b",
+        fillOpacity:0.7
+      }),
+    onEachFeature:(f,layer)=>{
+      bindInformation(layer,f,type);
+    }
+  }).addTo(target);
+}
 
-        let fireCount = 0;
-        let hospitalCount = 0;
+// ------------------------------------------------
+// 8. DATASET LOADING
+// ------------------------------------------------
+const counts={
+  fire:0,hospital:0,roads:0,schools:0,
+  fuel:0,police:0,water:0,shelters:0
+};
 
-        // Read features from GeoJSON
-        L.geoJSON(data, {
+const statusElement=document.getElementById("status");
+const loadingResults=[];
 
-          filter: function(feature) {
-            const amenity =
-              feature.properties?.amenity;
-
-            return amenity === "fire_station" ||
-                   amenity === "hospital";
-          },
-
-          pointToLayer: function(feature, latlng) {
-
-            const isFire =
-              feature.properties?.amenity ===
-              "fire_station";
-
-            const color = isFire
-              ? "#dc2626"
-              : "#2563eb";
-
-            return L.circleMarker(latlng, {
-              radius: 8,
-              color: "white",
-              weight: 2,
-              fillColor: color,
-              fillOpacity: 0.95
-            });
-          },
-
-          onEachFeature: function(feature, layer) {
-
-            const properties =
-              feature.properties || {};
-
-            const isFire =
-              properties.amenity === "fire_station";
-
-            const targetLayer = isFire
-              ? fireStations
-              : hospitals;
-
-            const popup = document.createElement(
-              "div"
-            );
-
-            const heading = document.createElement(
-              "strong"
-            );
-
-            heading.textContent =
-              properties.name || "Unnamed facility";
-
-            const category = document.createElement(
-              "p"
-            );
-
-            category.textContent = isFire
-              ? "Fire Station"
-              : "Hospital";
-
-            popup.appendChild(heading);
-            popup.appendChild(category);
-
-            layer.bindPopup(popup);
-
-            // Add each feature to its thematic layer
-            layer.addTo(targetLayer);
-
-            if (isFire) {
-              fireCount++;
-            } else {
-              hospitalCount++;
-            }
-          }
-
-        });
-
-        info.textContent =
-          "Saved OpenStreetMap data loaded: " +
-          fireCount + " fire stations and " +
-          hospitalCount + " hospitals. " +
-          "Click a facility for details.";
-
-      } catch (error) {
-
-        info.textContent =
-          "Unable to load emergency facilities: " +
-          error.message;
-
-        console.error(error);
-      }
+async function loadGeoJSON(filename,handler){
+  try{
+    const response=await fetch("./"+filename);
+    if(!response.ok){
+      throw new Error("HTTP "+response.status);
+    }
+    const data=await response.json();
+    if(!Array.isArray(data.features)){
+      throw new Error("Invalid GeoJSON FeatureCollection");
     }
 
-    loadFacilities();
-
-
-    // --------------------------------
-    // 7. CLICK MAP TO VIEW COORDINATES
-    // --------------------------------
-
-    map.on("click", function(event) {
-
-      const latitude =
-        event.latlng.lat.toFixed(5);
-
-      const longitude =
-        event.latlng.lng.toFixed(5);
-
-      document.getElementById(
-        "information"
-      ).textContent =
-        "Selected location — Latitude: " +
-        latitude +
-        " | Longitude: " +
-        longitude;
+    data.features.forEach(feature=>{
+      if(feature.geometry){
+        try { handler(feature); }
+        catch(error){ console.warn("Skipped feature",error); }
+      }
     });
 
-  </script>
+    loadingResults.push(filename+": loaded");
+  }catch(error){
+    loadingResults.push(filename+": "+error.message);
+    console.error(filename,error);
+  }
+}
+
+function loadEmergency(feature){
+  const p=feature.properties||{};
+  if(p.amenity==="fire_station"){
+    addPointFeature(feature,fireStations,icons.fire,"Fire station");
+    counts.fire++;
+  }
+  if(p.amenity==="hospital"){
+    addPointFeature(feature,hospitals,icons.hospital,"Hospital");
+    counts.hospital++;
+  }
+}
+
+function loadCommunity(feature){
+  const p=feature.properties||{};
+
+  if(["school","college","university"].includes(p.amenity)){
+    addPointFeature(
+      feature,schoolsColleges,icons.school,
+      "School / College / University"
+    );
+    counts.schools++;
+  }
+
+  if(p.amenity==="fuel"){
+    addPointFeature(feature,petrolPumps,icons.fuel,"Fuel station");
+    counts.fuel++;
+  }
+
+  if(p.amenity==="police"){
+    addPointFeature(feature,policeStations,icons.police,"Police station");
+    counts.police++;
+  }
+
+  if(
+    p.amenity==="shelter" ||
+    p.emergency==="assembly_point" ||
+    ["park","recreation_ground"].includes(p.leisure)
+  ){
+    addPointFeature(
+      feature,sheltersOpenSpaces,icons.shelter,
+      p.leisure ? "Park / Open space" : "Shelter / Assembly point"
+    );
+    counts.shelters++;
+  }
+}
+
+function loadRoads(feature){
+  const p=feature.properties||{};
+  if(!p.highway)return;
+
+  const isBridge=p.bridge &&
+    p.bridge!=="no" &&
+    p.bridge!=="false";
+
+  addStyledFeature(
+    feature,
+    roadsBridges,
+    {
+      color:isBridge?"#f59e0b":"#64748b",
+      weight:isBridge?5:3,
+      opacity:0.85
+    },
+    isBridge?"Mapped bridge":"Mapped road"
+  );
+  counts.roads++;
+}
+
+function loadWater(feature){
+  const p=feature.properties||{};
+  if(
+    p.natural==="water" ||
+    p.waterway==="riverbank" ||
+    p.landuse==="reservoir"
+  ){
+    addStyledFeature(
+      feature,
+      waterBodies,
+      {
+        color:"#0284c7",
+        weight:2,
+        fillColor:"#38bdf8",
+        fillOpacity:0.48
+      },
+      "Mapped water body"
+    );
+    counts.water++;
+  }
+}
+
+async function loadAll(){
+  statusElement.textContent="Loading saved GIS layers...";
+
+  await Promise.all([
+    loadGeoJSON("emergency_facilities.geojson",loadEmergency),
+    loadGeoJSON("community_facilities.geojson",loadCommunity),
+    loadGeoJSON("roads_bridges.geojson",loadRoads),
+    loadGeoJSON("water_bodies.geojson",loadWater)
+  ]);
+
+  statusElement.textContent=
+    "Loaded features — Fire stations: "+counts.fire+
+    " | Hospitals: "+counts.hospital+
+    " | Roads/bridges: "+counts.roads+
+    " | Schools/colleges: "+counts.schools+
+    " | Fuel stations: "+counts.fuel+
+    " | Police: "+counts.police+
+    " | Water: "+counts.water+
+    " | Shelters/open spaces: "+counts.shelters+
+    ". "+loadingResults.join(" | ");
+}
+
+loadAll();
+
+// ------------------------------------------------
+// 9. CLICK MAP TO INSPECT COORDINATES
+// ------------------------------------------------
+map.on("click",function(e){
+  showInspector("Selected geographic location",[
+    "Latitude: "+e.latlng.lat.toFixed(6),
+    "Longitude: "+e.latlng.lng.toFixed(6),
+    "Coordinates are in decimal degrees (WGS 84)."
+  ]);
+});
+
+// ------------------------------------------------
+// 10. MAP LEGEND
+// ------------------------------------------------
+const legend=L.control({position:"bottomleft"});
+
+legend.onAdd=function(){
+  const div=L.DomUtil.create("div","legend");
+
+  div.innerHTML=`
+    <div class="legend-title">MAP LEGEND</div>
+    <div><span class="swatch" style="background:#dc2626"></span> Fire station</div>
+    <div><span class="swatch circle" style="background:#2563eb"></span> Hospital</div>
+    <div><span class="swatch diamond" style="background:#9333ea"></span> School / College</div>
+    <div><span class="swatch triangle"></span> Fuel station</div>
+    <div><span class="swatch" style="background:#0d9488"></span> Police</div>
+    <div><span class="swatch circle" style="background:#16a34a"></span> Shelter / Open space</div>
+    <div><span class="line-swatch" style="background:#64748b"></span> Major road</div>
+    <div><span class="line-swatch" style="background:#f59e0b"></span> Bridge</div>
+    <div><span class="swatch" style="background:#38bdf8"></span> Water body</div>
+    <div><span class="swatch circle" style="background:#ef4444"></span> Simulated incident</div>
+  `;
+
+  L.DomEvent.disableClickPropagation(div);
+  L.DomEvent.disableScrollPropagation(div);
+  return div;
+};
+
+legend.addTo(map);
+</script>
 
 </body>
 </html>
