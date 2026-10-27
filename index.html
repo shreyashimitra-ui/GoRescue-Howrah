@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>GeoRescue Howrah</title>
+
+  <!-- Leaflet map library -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+    }
+
+    header {
+      background: #16324f;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 { margin: 0; }
+
+    #map {
+      height: 75vh;
+      width: 100%;
+    }
+
+    #information {
+      padding: 15px;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>GeoRescue Howrah</h1>
+    <p>Fire and Emergency Response GIS Dashboard</p>
+  </header>
+
+  <div id="map"></div>
+
+  <div id="information">
+    Click anywhere on the map to view coordinates.
+  </div>
+
+  <script>
+    // Create map centred on Howrah
+    const map = L.map("map").setView(
+      [22.5958, 88.2636], 12
+    );
+
+    // Add real OpenStreetMap background
+    L.tileLayer(
+      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        maxZoom: 19,
+        attribution:
+          '&copy; OpenStreetMap contributors'
+      }
+    ).addTo(map);
+
+    // Add a fictional fire incident
+    const fire = L.marker(
+      [22.5958, 88.2636]
+    ).addTo(map);
+
+    fire.bindPopup(
+      "<b>Simulated Fire Incident</b><br>" +
+      "Emergency training location"
+    );
+
+    // Display coordinates when clicked
+    map.on("click", function(event) {
+      const latitude = event.latlng.lat.toFixed(5);
+      const longitude = event.latlng.lng.toFixed(5);
+
+      document.getElementById(
+        "information"
+      ).textContent =
+        "Latitude: " + latitude +
+        " | Longitude: " + longitude;
+    });
+  </script>
+
+</body>
+</html>
