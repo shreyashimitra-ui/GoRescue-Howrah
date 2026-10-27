@@ -1,0 +1,7236 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-10-27T17:42:06Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "relation/9102486",
+      "properties": {
+        "@id": "relation/9102486",
+        "leisure": "park",
+        "name": "Maidan",
+        "name:hi": "मैदान",
+        "name:ur": "مَیدَان",
+        "name:zh": "迈丹公园",
+        "type": "multipolygon",
+        "wikidata": "Q987578",
+        "wikipedia": "en:Maidan (Kolkata)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3454423,
+          22.5525739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/13187941",
+      "properties": {
+        "@id": "relation/13187941",
+        "leisure": "park",
+        "name": "Children Park",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.293978,
+          22.6248158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/13188012",
+      "properties": {
+        "@id": "relation/13188012",
+        "leisure": "park",
+        "name": "Jagadishpur Children's Park",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2825435,
+          22.6482908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "relation/20513825",
+      "properties": {
+        "@id": "relation/20513825",
+        "leisure": "park",
+        "name": "Northern Park",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3499963,
+          22.5352134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52083568",
+      "properties": {
+        "@id": "way/52083568",
+        "amenity": "college",
+        "education": "college",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3608215,
+          22.5730958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52097541",
+      "properties": {
+        "@id": "way/52097541",
+        "access": "customers",
+        "alt_name": "Shibpur Botanic Garden",
+        "leisure": "park",
+        "name": "Acharya Jagadish Chandra Bose Indian Botanic Garden",
+        "name:etymology:wikidata": "Q314267",
+        "opening_hours": "tu-su 06:00-17:00",
+        "wikidata": "Q3346386",
+        "wikipedia": "en:Acharya Jagadish Chandra Bose Indian Botanic Garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.291925,
+          22.5584479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52097578",
+      "properties": {
+        "@id": "way/52097578",
+        "alt_name": "IIEST Shibpur",
+        "amenity": "university",
+        "name": "Indian Institute of Engineering Science and Technology, Shibpur",
+        "name:bn": "ইন্ডিয়ান ইনস্টিটিউট অফ ইঞ্জিনিয়ারিং সাইন্স এন্ড টেকনোলজি, শিবপুর",
+        "website": "https://www.iiests.ac.in/",
+        "wikidata": "Q3348743",
+        "wikimedia_commons": "Category:Indian Institute of Engineering Science and Technology, Shibpur",
+        "wikipedia": "en:IIEST, Shibpur",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3059081,
+          22.5552038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52097771",
+      "properties": {
+        "@id": "way/52097771",
+        "access": "no",
+        "leisure": "park",
+        "name": "Raj Bhavan Complex",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3472371,
+          22.5666328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52097785",
+      "properties": {
+        "@id": "way/52097785",
+        "leisure": "park",
+        "name": "Eden Garden Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.340764,
+          22.5643354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52098113",
+      "properties": {
+        "@id": "way/52098113",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "2",
+        "addr:postcode": "700027",
+        "addr:street": "Alipore Road",
+        "check_date": "2026-08-24",
+        "check_date:opening_hours": "2026-08-24",
+        "leisure": "park",
+        "name": "Alipore Zoo",
+        "opening_hours": "Fr-We 09:00-17:00",
+        "website": "https://kolkatazoo.in",
+        "wikidata": "Q3346440",
+        "wikimedia_commons": "Category:Alipore Zoological Gardens",
+        "wikipedia": "en:Zoological Garden, Alipore",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3318316,
+          22.5368389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/52155067",
+      "properties": {
+        "@id": "way/52155067",
+        "leisure": "park",
+        "name": "New Belilious Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3282319,
+          22.5949398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/101966419",
+      "properties": {
+        "@id": "way/101966419",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3438596,
+          22.5668332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/101966456",
+      "properties": {
+        "@id": "way/101966456",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3491528,
+          22.5719927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/101966466",
+      "properties": {
+        "@id": "way/101966466",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "12, Strand Rd, Bara Bazar, B.B.D. Bagh,",
+        "addr:postcode": "700001",
+        "addr:street": "Strand Road",
+        "leisure": "park",
+        "name": "Millennium Park",
+        "name:en": "Millennium Park",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "opening_hours:covid19": "closed",
+        "wikidata": "Q6858910",
+        "wikimedia_commons": "Category:Millennium Park (Kolkata)",
+        "wikipedia": "en:Millennium Park (Kolkata)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3446204,
+          22.5739575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/101972959",
+      "properties": {
+        "@id": "way/101972959",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.35957,
+          22.5637168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/101999505",
+      "properties": {
+        "@id": "way/101999505",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3595181,
+          22.5958209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/102018199",
+      "properties": {
+        "@id": "way/102018199",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3602232,
+          22.590643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/102036288",
+      "properties": {
+        "@id": "way/102036288",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3345441,
+          22.5824992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/102036413",
+      "properties": {
+        "@id": "way/102036413",
+        "amenity": "college",
+        "check_date": "2024-07-15",
+        "education": "college",
+        "name": "Bijay Krishna Girls College",
+        "name:en": "Bijay Krishna Girls College",
+        "operator:type": "government",
+        "website": "https://bkgc.in/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3354413,
+          22.5835143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/102688630",
+      "properties": {
+        "@id": "way/102688630",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3505243,
+          22.5849626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/102829185",
+      "properties": {
+        "@id": "way/102829185",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.359325,
+          22.5822083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/103010016",
+      "properties": {
+        "@id": "way/103010016",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3559909,
+          22.5863287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/103010035",
+      "properties": {
+        "@id": "way/103010035",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3558761,
+          22.5913653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111390982",
+      "properties": {
+        "@id": "way/111390982",
+        "amenity": "college",
+        "name": "West Bengal Urdu Academy",
+        "religion": "muslim",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3581796,
+          22.5571826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111507352",
+      "properties": {
+        "@id": "way/111507352",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3567539,
+          22.5537408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111509193",
+      "properties": {
+        "@id": "way/111509193",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "56B",
+        "addr:postcode": "700016",
+        "addr:street": "Mirza Ghalib Street",
+        "amenity": "college",
+        "name": "Armenian College",
+        "wikidata": "Q4069721",
+        "wikipedia": "en:Armenian College (Kolkata)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3535532,
+          22.5549291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111639730",
+      "properties": {
+        "@id": "way/111639730",
+        "leisure": "park",
+        "name": "Auckland Square",
+        "note": "Name is from OSM notes, could do with further verification.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3580914,
+          22.5425935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111639732",
+      "properties": {
+        "@id": "way/111639732",
+        "leisure": "park",
+        "name": "Minto Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3547169,
+          22.5418107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/111639737",
+      "properties": {
+        "@id": "way/111639737",
+        "amenity": "college",
+        "name": "Loreto House School & College",
+        "name:etymology:wikidata": "Q17052262",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3524448,
+          22.5495354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112025082",
+      "properties": {
+        "@id": "way/112025082",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3464771,
+          22.5442176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112025101",
+      "properties": {
+        "@id": "way/112025101",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3472146,
+          22.5451986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112025103",
+      "properties": {
+        "@id": "way/112025103",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3458253,
+          22.5426419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112044538",
+      "properties": {
+        "@id": "way/112044538",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3311836,
+          22.5551637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/112595089",
+      "properties": {
+        "@id": "way/112595089",
+        "leisure": "park",
+        "name": "Rawdon Square",
+        "name:etymology:wikidata": "Q692434",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3595596,
+          22.5451496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/114817639",
+      "properties": {
+        "@id": "way/114817639",
+        "addr:housenumber": "6;7",
+        "addr:postcode": "712258",
+        "addr:street": "Acharya Dhruba Pal Road",
+        "alt_name": "Uttarpara Govt.School",
+        "amenity": "school",
+        "check_date": "2026-07-25",
+        "int_name": "Uttarpara Govt. High School",
+        "name": "Uttarpara Govt. High School",
+        "old_name": "Uttarpara Govt. High School",
+        "source": "Local Knowledge",
+        "wikidata": "Q7903414",
+        "wikipedia": "en:Uttarpara Govt. High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3484861,
+          22.6558191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/114817812",
+      "properties": {
+        "@id": "way/114817812",
+        "addr:housenumber": "1",
+        "addr:postcode": "712258",
+        "addr:street": "Acharya Dhruba Pal Road",
+        "alt_name": "Uttarpara College",
+        "amenity": "university",
+        "contact:facebook": "RPMCollege",
+        "contact:instagram": "rpmsmc",
+        "contact:twitter": "PearyRaja",
+        "designation": "College",
+        "education": "university",
+        "email": "rajapearymohancollege@gmail.com",
+        "int_name": "Raja Payari Mohan College",
+        "name": "Raja Peary Mohon College",
+        "name:bn": "রাজা প্যারীমোহন কলেজ",
+        "old_name": "Raja Payari Mohan College",
+        "phone": "+91 3326631101",
+        "source": "Local Knowledge",
+        "website": "https://rpmcollege.edu.in/",
+        "wheelchair": "yes",
+        "wikidata": "Q7285511",
+        "wikipedia": "en:Raja Peary Mohan College",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3493132,
+          22.6561608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/117170550",
+      "properties": {
+        "@id": "way/117170550",
+        "amenity": "college",
+        "check_date": "2026-03-22",
+        "name": "Bishops College",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3593459,
+          22.5400312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/121906351",
+      "properties": {
+        "@id": "way/121906351",
+        "amenity": "school",
+        "name": "St. Lawrence High School",
+        "wikidata": "Q17016720",
+        "wikipedia": "en:St. Lawrence High School, Kolkata",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3563503,
+          22.5280188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122033781",
+      "properties": {
+        "@id": "way/122033781",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3585925,
+          22.5343414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122039677",
+      "properties": {
+        "@id": "way/122039677",
+        "amenity": "school",
+        "brand": "Kendriya Vidyalaya",
+        "brand:wikidata": "Q1156653",
+        "check_date": "2023-10-04",
+        "name": "Kendriya Vidyalaya",
+        "operator:type": "government_non_profit",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3583122,
+          22.5308931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122151081",
+      "properties": {
+        "@id": "way/122151081",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "name": "Ballygunge Government High School",
+        "wikidata": "Q4852149",
+        "wikimedia_commons": "Category:Ballygunge Government High School",
+        "wikipedia": "en:Ballygunge Government High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3544322,
+          22.5298819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122151086",
+      "properties": {
+        "@id": "way/122151086",
+        "amenity": "college",
+        "check_date": "2026-03-22",
+        "name": "David Hare Training College",
+        "name:etymology:wikidata": "Q5234723",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.355468,
+          22.529703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122151349",
+      "properties": {
+        "@id": "way/122151349",
+        "leisure": "park",
+        "name": "Maddox Square",
+        "wikidata": "Q68952555",
+        "wikimedia_commons": "Category:Maddox Square",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3546467,
+          22.5262802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122191972",
+      "properties": {
+        "@id": "way/122191972",
+        "leisure": "park",
+        "name": "Elgin Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.347565,
+          22.5375496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122191974",
+      "properties": {
+        "@id": "way/122191974",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "name": "St Johns Diocesan Girls Higher Secondary",
+        "wikidata": "Q7588662",
+        "wikipedia": "en:St. John's Diocesan Girls' Higher Secondary School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.353789,
+          22.5368906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122191980",
+      "properties": {
+        "@id": "way/122191980",
+        "addr:housenumber": "3",
+        "addr:postcode": "700020",
+        "addr:street": "Ashutosh Mukhejee Road",
+        "amenity": "school",
+        "check_date": "2023-10-28",
+        "name": "United Missionary Girls High School",
+        "phone": "03324752135",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3472369,
+          22.5368296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122191985",
+      "properties": {
+        "@id": "way/122191985",
+        "amenity": "school",
+        "name": "Cathedral Mission High School",
+        "wikidata": "Q24945327",
+        "wikipedia": "en:Cathedral Mission High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3530955,
+          22.5370143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122419639",
+      "properties": {
+        "@id": "way/122419639",
+        "leisure": "park",
+        "name": "Ganja Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3466818,
+          22.535572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122439408",
+      "properties": {
+        "@id": "way/122439408",
+        "leisure": "park",
+        "name": "Ladies Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3498523,
+          22.5296379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122755056",
+      "properties": {
+        "@id": "way/122755056",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3436536,
+          22.5297032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122755067",
+      "properties": {
+        "@id": "way/122755067",
+        "leisure": "park",
+        "name": "Harish Park",
+        "wikidata": "Q69332274",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.343761,
+          22.5305431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122925121",
+      "properties": {
+        "@id": "way/122925121",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3382776,
+          22.5395086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122925127",
+      "properties": {
+        "@id": "way/122925127",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3375439,
+          22.5396683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122925156",
+      "properties": {
+        "@id": "way/122925156",
+        "addr:housenumber": "247",
+        "addr:postcode": "700027",
+        "addr:street": "Acharya Jagdish Chandra Bose Road",
+        "amenity": "college",
+        "check_date": "2023-10-28",
+        "name": "Kolkata Police Training School",
+        "opening_hours": "24/7",
+        "phone": "03322505000",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3364618,
+          22.5383474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/122950344",
+      "properties": {
+        "@id": "way/122950344",
+        "amenity": "university",
+        "check_date": "2023-10-27",
+        "name": "Calcutta University Alipore Campus",
+        "phone": "03322410071",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3343371,
+          22.5350092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123491602",
+      "properties": {
+        "@id": "way/123491602",
+        "amenity": "college",
+        "name": "St Thomas College of Engineering and Technology",
+        "wikidata": "Q16963436",
+        "wikipedia": "en:St. Thomas' College of Engineering and Technology",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3286083,
+          22.5387797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123491603",
+      "properties": {
+        "@id": "way/123491603",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3291152,
+          22.537691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123491611",
+      "properties": {
+        "@id": "way/123491611",
+        "amenity": "school",
+        "name": "St Thomas Girls School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3293204,
+          22.5397773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123491615",
+      "properties": {
+        "@id": "way/123491615",
+        "amenity": "school",
+        "name": "St Paul's High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3279709,
+          22.5398644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123684770",
+      "properties": {
+        "@id": "way/123684770",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3285585,
+          22.5342461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123837549",
+      "properties": {
+        "@id": "way/123837549",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3209113,
+          22.5438477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123852896",
+      "properties": {
+        "@id": "way/123852896",
+        "amenity": "school",
+        "name": "School for the Handicapped",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3107456,
+          22.546663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123852902",
+      "properties": {
+        "@id": "way/123852902",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3116769,
+          22.5467027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/123870460",
+      "properties": {
+        "@id": "way/123870460",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.310628,
+          22.5449678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/134098557",
+      "properties": {
+        "@id": "way/134098557",
+        "amenity": "college",
+        "name": "MCKV Institute of Engineering",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3476639,
+          22.6199587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/134098565",
+      "properties": {
+        "@id": "way/134098565",
+        "amenity": "school",
+        "name": "M C Kejriwal Vidyapeeth",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3478437,
+          22.6203071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/134099286",
+      "properties": {
+        "@id": "way/134099286",
+        "addr:city": "Howrah",
+        "amenity": "school",
+        "building": "school",
+        "denomination": "roman_catholic",
+        "isced:level": "3",
+        "min_age": "4",
+        "name": "Don Bosco School Liluah",
+        "opening_hours": "Mo-Fr 07:00-18:00; PH closed",
+        "operator": "Catholic School",
+        "operator:type": "religious",
+        "religion": "christian",
+        "wheelchair": "yes",
+        "wikidata": "Q5292264",
+        "wikipedia": "en:Don Bosco High & Technical School, Liluah",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3520855,
+          22.6193315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/134100472",
+      "properties": {
+        "@id": "way/134100472",
+        "amenity": "college",
+        "check_date": "2025-01-19",
+        "name": "Belur Math Polytechnic College",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3520883,
+          22.632478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/134100491",
+      "properties": {
+        "@id": "way/134100491",
+        "amenity": "university",
+        "check_date": "2025-01-13",
+        "name": "Ramakrishna Mission Vivekananda university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.353683,
+          22.629621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142482528",
+      "properties": {
+        "@id": "way/142482528",
+        "amenity": "school",
+        "name": "Sanghamitra Vidyalaya",
+        "wikidata": "Q73862133",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3100379,
+          22.5427177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142486931",
+      "properties": {
+        "@id": "way/142486931",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3264395,
+          22.5391748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142487309",
+      "properties": {
+        "@id": "way/142487309",
+        "addr:housenumber": "72",
+        "addr:postcode": "700023",
+        "addr:street": "Diamond Harbour Road",
+        "amenity": "school",
+        "check_date": "2023-10-28",
+        "name": "St Teresa's Secondary School",
+        "name:etymology:wikidata": "Q458315",
+        "opening_hours": "Mo-Fr 08:25-14:30",
+        "website": "https://www.stssalumni.co.in/about.html",
+        "wikidata": "Q24940094",
+        "wikimedia_commons": "Category:St. Teresa's Secondary School",
+        "wikipedia": "en:St. Teresa's Secondary School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3269001,
+          22.5373873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142681896",
+      "properties": {
+        "@id": "way/142681896",
+        "addr:housenumber": "68",
+        "addr:postcode": "700023",
+        "addr:street": "Diamond Harbour Road",
+        "amenity": "school",
+        "check_date": "2023-10-28",
+        "name": "St Paul's Boarding and Day School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3262494,
+          22.5346103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142682135",
+      "properties": {
+        "@id": "way/142682135",
+        "leisure": "park",
+        "name": "Nawab Ali Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3261888,
+          22.5326715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142703110",
+      "properties": {
+        "@id": "way/142703110",
+        "amenity": "college",
+        "name": "Jnan Chandra Ghosh Polytechnic",
+        "name:etymology:wikidata": "Q15647901",
+        "wikidata": "Q17059654",
+        "wikipedia": "en:Jnan Chandra Ghosh Polytechnic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3209976,
+          22.5281217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142703854",
+      "properties": {
+        "@id": "way/142703854",
+        "leisure": "park",
+        "name": "Hossain Shah Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.321668,
+          22.5268509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142718053",
+      "properties": {
+        "@id": "way/142718053",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.317571,
+          22.5367172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/142757890",
+      "properties": {
+        "@id": "way/142757890",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3231644,
+          22.5367178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/143605085",
+      "properties": {
+        "@id": "way/143605085",
+        "amenity": "school",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3269028,
+          22.5296005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/143613177",
+      "properties": {
+        "@id": "way/143613177",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3354719,
+          22.533057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/143830305",
+      "properties": {
+        "@id": "way/143830305",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3392437,
+          22.5311676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/143895194",
+      "properties": {
+        "@id": "way/143895194",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3495375,
+          22.52693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/143899581",
+      "properties": {
+        "@id": "way/143899581",
+        "leisure": "park",
+        "name": "Southern Samity Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3524101,
+          22.5267468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/144014966",
+      "properties": {
+        "@id": "way/144014966",
+        "leisure": "park",
+        "name": "Jatin Das Park",
+        "name:bn": "যতীন দাস পার্ক",
+        "name:etymology:wikidata": "Q2913581",
+        "name:hi": "जतिन दास पार्क",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.346013,
+          22.5244197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/166896283",
+      "properties": {
+        "@id": "way/166896283",
+        "addr:housename": "A. G. Towers",
+        "addr:street": "Park Street",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "name": "A. G. Church School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3604692,
+          22.5477227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/172478864",
+      "properties": {
+        "@id": "way/172478864",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "fuel:diesel": "yes",
+        "name": "HP Petrol Pump",
+        "official_name": "Hindustan Petroleum",
+        "operator": "Hindustan Petroleum Corporation Limited",
+        "short_name": "HP",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3305207,
+          22.5226415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/172493055",
+      "properties": {
+        "@id": "way/172493055",
+        "amenity": "fuel",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3315578,
+          22.5316307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/172493056",
+      "properties": {
+        "@id": "way/172493056",
+        "amenity": "fuel",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3316262,
+          22.5321583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/175484376",
+      "properties": {
+        "@id": "way/175484376",
+        "leisure": "park",
+        "name": "Chaplin Park",
+        "name:etymology:wikidata": "Q882",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3526616,
+          22.561641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/175776605",
+      "properties": {
+        "@id": "way/175776605",
+        "amenity": "fuel",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3469614,
+          22.5219126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/175879411",
+      "properties": {
+        "@id": "way/175879411",
+        "addr:housenumber": "12-B",
+        "addr:street": "Alipore Road",
+        "amenity": "school",
+        "check_date": "2023-10-27",
+        "name": "Lakshmipat Singhania Academy",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3305314,
+          22.5256988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/176059396",
+      "properties": {
+        "@id": "way/176059396",
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Kalisingh Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3412165,
+          22.5420547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/177706434",
+      "properties": {
+        "@id": "way/177706434",
+        "leisure": "park",
+        "name": "Nature Study Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3566163,
+          22.5465036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/177708288",
+      "properties": {
+        "@id": "way/177708288",
+        "addr:city": "Kolkata",
+        "amenity": "college",
+        "denomination": "roman_catholic",
+        "name": "Saint Xavier's College (Autonomous)",
+        "operator:type": "religious",
+        "religion": "christian",
+        "website": "https://sxccal.edu",
+        "wikidata": "Q7592175",
+        "wikimedia_commons": "Category:St._Xavier's_College,_Kolkata",
+        "wikipedia": "en:St. Xavier's College, Kolkata",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.356237,
+          22.5486048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/177708290",
+      "properties": {
+        "@id": "way/177708290",
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Allen Park",
+        "official_name": "Gopi Nath Saha Udyan",
+        "opening_hours": "05:30-12:00, 15:00-19:00",
+        "operator": "Diamond Group",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3544737,
+          22.5502833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/187718109",
+      "properties": {
+        "@id": "way/187718109",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "name": "La Martinere for Girls",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3582962,
+          22.541722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188763407",
+      "properties": {
+        "@id": "way/188763407",
+        "amenity": "school",
+        "brand": "Kendriya Vidyalaya",
+        "brand:wikidata": "Q1156653",
+        "check_date": "2023-10-27",
+        "grades": "1-12",
+        "name": "Kendriya Vidyalaya",
+        "operator:type": "government_non_profit",
+        "wikidata": "Q73860767",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3270993,
+          22.5294719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188763408",
+      "properties": {
+        "@id": "way/188763408",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil Petrol Pump",
+        "operator": "Indian Oil Corporation Limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.326551,
+          22.5314019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188763410",
+      "properties": {
+        "@id": "way/188763410",
+        "addr:housenumber": "54/3",
+        "addr:street": "Diamond Harbour Road",
+        "amenity": "school",
+        "check_date": "2023-10-27",
+        "denomination": "catholic",
+        "name": "Loyola High School",
+        "wikidata": "Q91225355",
+        "wikipedia": "en:Loyola High School (Kolkata)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3263553,
+          22.530267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188777554",
+      "properties": {
+        "@id": "way/188777554",
+        "addr:postcode": "700027",
+        "addr:street": "Judges Court Road",
+        "amenity": "college",
+        "name": "Army Institute of Management",
+        "wikidata": "Q4794157",
+        "wikimedia_commons": "Category:Army Institute of Management, Kolkata",
+        "wikipedia": "en:Army Institute of Management, Kolkata",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3275519,
+          22.5277549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/188777556",
+      "properties": {
+        "@id": "way/188777556",
+        "addr:housename": "Dhanasree Towers",
+        "addr:housenumber": "70, (Front Block, 2nd Floor)",
+        "addr:postcode": "700023",
+        "addr:street": "Diamond Harbour Road",
+        "amenity": "college",
+        "name": "International Management Institute",
+        "wikidata": "Q17055840",
+        "wikipedia": "en:IMI Kolkata",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3267323,
+          22.5259815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/190905006",
+      "properties": {
+        "@id": "way/190905006",
+        "leisure": "park",
+        "name": "Agri Horticultural Society of India",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3331975,
+          22.5280376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/190905693",
+      "properties": {
+        "@id": "way/190905693",
+        "amenity": "school",
+        "name": "Alipore Multipurpose Government Girls School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3342674,
+          22.5227052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/190923516",
+      "properties": {
+        "@id": "way/190923516",
+        "amenity": "police",
+        "name": "Kalighat Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3437773,
+          22.5213925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/190925408",
+      "properties": {
+        "@id": "way/190925408",
+        "amenity": "police",
+        "name": "Kalighat Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3436495,
+          22.5209102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/197120147",
+      "properties": {
+        "@id": "way/197120147",
+        "addr:postcode": "700017",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "name": "Birla High School",
+        "opening_hours": "Mo-Fr 07:00-17:00",
+        "website": "https://birlahighschool.com/",
+        "wikidata": "Q4916516",
+        "wikipedia": "en:Birla High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545612,
+          22.5432387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/204893581",
+      "properties": {
+        "@id": "way/204893581",
+        "leisure": "park",
+        "name": "Victoria Square",
+        "name:etymology:wikidata": "Q9439",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3530476,
+          22.5430499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/215824661",
+      "properties": {
+        "@id": "way/215824661",
+        "addr:postcode": "711302",
+        "addr:street": "Acharya Sirish Sarani",
+        "amenity": "school",
+        "name": "Mohiary Kundu Chaudhury Institution",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2370684,
+          22.5864133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/224409627",
+      "properties": {
+        "@id": "way/224409627",
+        "amenity": "school",
+        "name": "Mitra Institution Bhowanipore Branch",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3436509,
+          22.5291927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/224410798",
+      "properties": {
+        "@id": "way/224410798",
+        "amenity": "school",
+        "name": "South Subarban School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3444309,
+          22.5308918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/334634665",
+      "properties": {
+        "@id": "way/334634665",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3126208,
+          22.5435119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/358149696",
+      "properties": {
+        "@id": "way/358149696",
+        "addr:postcode": "711202",
+        "amenity": "college",
+        "building": "college",
+        "building:levels": "2",
+        "check_date": "2025-01-13",
+        "contact:email": "vidyamandira@gmail.com",
+        "name": "Ramakrishna Mission Vidyamandira",
+        "name:bn": "রামকৃষ্ণ মিশন বিদ্যামন্দির",
+        "nohousenumber": "yes",
+        "opening_hours": "Mo-Sa 10:30-16:00",
+        "roof:shape": "dome",
+        "website": "vidyamandira.ac.in",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3541187,
+          22.6316445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/358854282",
+      "properties": {
+        "@id": "way/358854282",
+        "leisure": "park",
+        "name": "Hastings Small Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3278852,
+          22.5471776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/358854815",
+      "properties": {
+        "@id": "way/358854815",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "building": "yes",
+        "check_date": "2026-03-22",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3582987,
+          22.5389875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/358873258",
+      "properties": {
+        "@id": "way/358873258",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3560148,
+          22.549794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/359328609",
+      "properties": {
+        "@id": "way/359328609",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum",
+        "short_name": "HP",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3248934,
+          22.5221168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/360460191",
+      "properties": {
+        "@id": "way/360460191",
+        "amenity": "police",
+        "building": "yes",
+        "check_date": "2024-07-15",
+        "internet_access": "no",
+        "name": "boubazar police station",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545413,
+          22.5802063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/362945052",
+      "properties": {
+        "@id": "way/362945052",
+        "amenity": "school",
+        "building": "yes",
+        "name": "Saint Anthony's High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3552274,
+          22.5599311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/377930740",
+      "properties": {
+        "@id": "way/377930740",
+        "leisure": "park",
+        "name": "Mandirtala ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3171517,
+          22.5696174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/379075449",
+      "properties": {
+        "@id": "way/379075449",
+        "amenity": "police",
+        "name": "Shibpur Police Line",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3224955,
+          22.5639477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384645281",
+      "properties": {
+        "@id": "way/384645281",
+        "amenity": "school",
+        "name": "Tiny Tots Kindergarten School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3194611,
+          22.5721656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384699047",
+      "properties": {
+        "@id": "way/384699047",
+        "amenity": "school",
+        "lit": "no",
+        "name": "HVI Play Ground",
+        "surface": "paved",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3164835,
+          22.5776774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384701039",
+      "properties": {
+        "@id": "way/384701039",
+        "amenity": "school",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3260106,
+          22.5756686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384707684",
+      "properties": {
+        "@id": "way/384707684",
+        "amenity": "school",
+        "name": "B. K. Paul's Institution Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3247312,
+          22.5718958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384710781",
+      "properties": {
+        "@id": "way/384710781",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Shibpur Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3263141,
+          22.5707893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/384991658",
+      "properties": {
+        "@id": "way/384991658",
+        "leisure": "park",
+        "name": "Maa Mati Uddyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3047954,
+          22.5719302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/385516755",
+      "properties": {
+        "@id": "way/385516755",
+        "amenity": "school",
+        "name": "Pajnanananda Vidyalaya Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3103867,
+          22.5596528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/385542170",
+      "properties": {
+        "@id": "way/385542170",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Amtala Phari",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3014599,
+          22.5634761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/385874268",
+      "properties": {
+        "@id": "way/385874268",
+        "leisure": "park",
+        "name": "Dumurjola Stadium Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3071448,
+          22.5798681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/468615148",
+      "properties": {
+        "@id": "way/468615148",
+        "leisure": "park",
+        "name": "Lokmanya Bal Gangadhar Tilak Park",
+        "name:etymology:wikidata": "Q312555",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3241676,
+          22.5622436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/469676580",
+      "properties": {
+        "@id": "way/469676580",
+        "amenity": "police",
+        "name": "Hastings Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3285549,
+          22.548483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/469883540",
+      "properties": {
+        "@id": "way/469883540",
+        "barrier": "fence",
+        "leisure": "park",
+        "name": "Mohor Kunja",
+        "opening_hours": "Mo-Su 05:00-09:00,15:00-20:00",
+        "opening_hours:covid19": "closed",
+        "wikidata": "Q9610",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3444325,
+          22.5437673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/469886608",
+      "properties": {
+        "@id": "way/469886608",
+        "leisure": "park",
+        "name": "Elliot Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3474259,
+          22.5486351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/469983121",
+      "properties": {
+        "@id": "way/469983121",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3047041,
+          22.5594385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/474958009",
+      "properties": {
+        "@id": "way/474958009",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3219507,
+          22.5707961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/480634391",
+      "properties": {
+        "@id": "way/480634391",
+        "leisure": "park",
+        "name": "mitra gardens",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2713112,
+          22.574127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/517920551",
+      "properties": {
+        "@id": "way/517920551",
+        "leisure": "park",
+        "name": "Lords",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3082427,
+          22.5560092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/517920586",
+      "properties": {
+        "@id": "way/517920586",
+        "amenity": "school",
+        "name": "BE College Model School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3045121,
+          22.5538652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/544419555",
+      "properties": {
+        "@id": "way/544419555",
+        "leisure": "park",
+        "name": "Grounds Field Area",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3157614,
+          22.6087862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/545711666",
+      "properties": {
+        "@id": "way/545711666",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2966314,
+          22.5916333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/545716791",
+      "properties": {
+        "@id": "way/545716791",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2982167,
+          22.5894061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/546114597",
+      "properties": {
+        "@id": "way/546114597",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2913511,
+          22.5902657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/549084023",
+      "properties": {
+        "@id": "way/549084023",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3171449,
+          22.5701843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/555882574",
+      "properties": {
+        "@id": "way/555882574",
+        "description": "Playground",
+        "leisure": "park",
+        "name": "Khelaghar",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3193918,
+          22.5795676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/560429074",
+      "properties": {
+        "@id": "way/560429074",
+        "addr:city": "howrah",
+        "addr:postcode": "711104",
+        "addr:street": "Ichapur road",
+        "leisure": "park",
+        "name": "Sibaji Sanjha park",
+        "opening_hours": "24/7",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3069043,
+          22.5886726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/574563360",
+      "properties": {
+        "@id": "way/574563360",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.359482,
+          22.5476942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/648388069",
+      "properties": {
+        "@id": "way/648388069",
+        "addr:city": "howrah",
+        "addr:postcode": "711110",
+        "addr:street": "near locoshed road",
+        "description": "it is a big park near locoshed , santragachi station road",
+        "leisure": "park",
+        "name": "BNR ground park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2756398,
+          22.5813842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203508",
+      "properties": {
+        "@id": "way/658203508",
+        "leisure": "park",
+        "name": "railway hospital park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2757763,
+          22.580409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203513",
+      "properties": {
+        "@id": "way/658203513",
+        "leisure": "park",
+        "name": "chotodol club park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2861963,
+          22.5808264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203515",
+      "properties": {
+        "@id": "way/658203515",
+        "leisure": "park",
+        "name": "chotodol playing ground park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2868201,
+          22.5813871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203518",
+      "properties": {
+        "@id": "way/658203518",
+        "leisure": "park",
+        "name": "sahaibpara park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2731284,
+          22.5820904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203519",
+      "properties": {
+        "@id": "way/658203519",
+        "leisure": "park",
+        "name": "sahaibpara park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2738173,
+          22.5821062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203520",
+      "properties": {
+        "@id": "way/658203520",
+        "leisure": "park",
+        "name": "sahaibpara 12 no. park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2704104,
+          22.5820765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203521",
+      "properties": {
+        "@id": "way/658203521",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2714769,
+          22.5822159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203522",
+      "properties": {
+        "@id": "way/658203522",
+        "leisure": "park",
+        "name": "sitala park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2719368,
+          22.5821866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203523",
+      "properties": {
+        "@id": "way/658203523",
+        "leisure": "park",
+        "name": "jora mandir park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2721772,
+          22.5818291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203524",
+      "properties": {
+        "@id": "way/658203524",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2718545,
+          22.5819668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/658203527",
+      "properties": {
+        "@id": "way/658203527",
+        "leisure": "park",
+        "name": "scout park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.27404,
+          22.5804822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/663943188",
+      "properties": {
+        "@id": "node/663943188",
+        "amenity": "police",
+        "check_date": "2026-03-22",
+        "name": "Gokhale Road Police Quarters"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.344409,
+          22.5393378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/667091293",
+      "properties": {
+        "@id": "way/667091293",
+        "leisure": "park",
+        "name": "Nabin Sangha Sishu Uddan Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2944273,
+          22.5904058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/667836553",
+      "properties": {
+        "@id": "way/667836553",
+        "addr:city": "howrah",
+        "addr:postcode": "711104",
+        "addr:street": "Ramrajatala",
+        "leisure": "park",
+        "name": "Aviyaan Play Ground",
+        "opening_hours": "24/7",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2993107,
+          22.5971507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/688498185",
+      "properties": {
+        "@id": "way/688498185",
+        "leisure": "park",
+        "name": "Football ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2850028,
+          22.5933823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/688498186",
+      "properties": {
+        "@id": "way/688498186",
+        "leisure": "park",
+        "name": "jj sporting ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2838136,
+          22.5940167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/689314673",
+      "properties": {
+        "@id": "way/689314673",
+        "leisure": "park",
+        "name": "Prakitinath Sishu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.315412,
+          22.570101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/694479039",
+      "properties": {
+        "@id": "way/694479039",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3206177,
+          22.5696395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/705890163",
+      "properties": {
+        "@id": "way/705890163",
+        "leisure": "park",
+        "name": "Khelaghor Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3189364,
+          22.5793302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/712700052",
+      "properties": {
+        "@id": "way/712700052",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3171154,
+          22.5380718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/728977814",
+      "properties": {
+        "@id": "way/728977814",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "1",
+        "addr:postcode": "700071",
+        "addr:street": "Queen's Way",
+        "dog": "no",
+        "leisure": "park",
+        "name": "Victoria Memorial Garden",
+        "opening_hours": "Mo-Su 10:00-18:00",
+        "operator": "Ministry of Culture",
+        "smoking": "no",
+        "website": "https://www.victoriamemorial-cal.org/",
+        "wikidata": "Q1356352",
+        "wikimedia_commons": "Category:Victoria Memorial, Kolkata",
+        "wikipedia": "en:Victoria Memorial, Kolkata",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3434396,
+          22.5447396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/729077994",
+      "properties": {
+        "@id": "way/729077994",
+        "addr:street": "Lansdowne Road (Sarat Bose Road)",
+        "leisure": "park",
+        "name": "Padmapukur Park",
+        "operator": "কলকাতা পৌরসংস্থা",
+        "operator:bn": "কলকাতা পৌরসংস্থা",
+        "operator:en": "Kolkata Municipal Corporation",
+        "operator:short": "KMC",
+        "operator:type": "government",
+        "operator:wikidata": "Q3350560",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3524428,
+          22.5316896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/739475177",
+      "properties": {
+        "@id": "way/739475177",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3206395,
+          22.5640855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/741694174",
+      "properties": {
+        "@id": "way/741694174",
+        "leisure": "park",
+        "name": "Dumurjola Eco Park",
+        "opening_hours": "11:00-18:00",
+        "operator": "hit.gov.in",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3086982,
+          22.5887324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/741694324",
+      "properties": {
+        "@id": "way/741694324",
+        "leisure": "park",
+        "name": "Nibedita Sishu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.314162,
+          22.5827103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/741696285",
+      "properties": {
+        "@id": "way/741696285",
+        "leisure": "park",
+        "name": "Rabindra–Nazrul Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3065065,
+          22.5693457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/741803874",
+      "properties": {
+        "@id": "way/741803874",
+        "leisure": "park",
+        "name": "Lt. Namita Mitra Sishu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3207072,
+          22.5767253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642646",
+      "properties": {
+        "@id": "way/745642646",
+        "leisure": "park",
+        "name": "shani football park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3106791,
+          22.593839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642647",
+      "properties": {
+        "@id": "way/745642647",
+        "leisure": "park",
+        "name": "football park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3120177,
+          22.5932722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642648",
+      "properties": {
+        "@id": "way/745642648",
+        "leisure": "park",
+        "name": "children park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3126265,
+          22.5930864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642650",
+      "properties": {
+        "@id": "way/745642650",
+        "leisure": "park",
+        "name": "common park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3103235,
+          22.5893815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642651",
+      "properties": {
+        "@id": "way/745642651",
+        "leisure": "park",
+        "name": "shivaji sangha park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2962399,
+          22.5962718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642652",
+      "properties": {
+        "@id": "way/745642652",
+        "leisure": "park",
+        "name": "barron park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.295102,
+          22.5977357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642654",
+      "properties": {
+        "@id": "way/745642654",
+        "leisure": "park",
+        "name": "tarun dal park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.299572,
+          22.6002521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642656",
+      "properties": {
+        "@id": "way/745642656",
+        "leisure": "park",
+        "name": "abasar park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3136119,
+          22.59115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/745642657",
+      "properties": {
+        "@id": "way/745642657",
+        "leisure": "park",
+        "name": "pallibashi park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3158256,
+          22.5912676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/751626380",
+      "properties": {
+        "@id": "way/751626380",
+        "leisure": "park",
+        "name": "Umbrella Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2536984,
+          22.5331637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/752109956",
+      "properties": {
+        "@id": "way/752109956",
+        "leisure": "park",
+        "name": "Sarat Sishu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3177563,
+          22.5723406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753392676",
+      "properties": {
+        "@id": "way/753392676",
+        "addr:city": "Howrah",
+        "addr:postcode": "711313",
+        "addr:street": "E Block, Sankrail",
+        "leisure": "park",
+        "name": "Sankrail Gol Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.214198,
+          22.5662983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753397087",
+      "properties": {
+        "@id": "way/753397087",
+        "leisure": "park",
+        "name": "Lake Land Country Club Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2708535,
+          22.592982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753397736",
+      "properties": {
+        "@id": "way/753397736",
+        "leisure": "park",
+        "name": "Shankar Math",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2976005,
+          22.588907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753403773",
+      "properties": {
+        "@id": "way/753403773",
+        "leisure": "park",
+        "name": "Chandmari Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2798754,
+          22.5740996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753418247",
+      "properties": {
+        "@id": "way/753418247",
+        "leisure": "park",
+        "name": "Jagacha Minni Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2796009,
+          22.5877597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/753549603",
+      "properties": {
+        "@id": "way/753549603",
+        "addr:city": "Kolkata",
+        "addr:postcode": "700025",
+        "addr:street": "Priyanath Mallick Road",
+        "leisure": "park",
+        "name": "Satya Ranjan Baksi Smriti Parl",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.347446,
+          22.5279732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/754822036",
+      "properties": {
+        "@id": "way/754822036",
+        "addr:housenumber": "27-B",
+        "addr:postcode": "700016",
+        "addr:street": "Park Street",
+        "amenity": "school",
+        "building": "school",
+        "contact:email": "harrowhallcalcutta@gmail.com",
+        "contact:phone": "+91 33 3242 0436;+91 33 6451 0008;+91 33 2252 2404",
+        "contact:website": "http://harrowhallkolkata.net",
+        "name": "Harrow Hall",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.352712,
+          22.553928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/769050400",
+      "properties": {
+        "@id": "way/769050400",
+        "addr:city": "Bhadrakali",
+        "addr:postcode": "712232",
+        "addr:street": "Shantinagar Road",
+        "description": "A local recreational park for strolls, children's play, pet walking and hang out.",
+        "leisure": "park",
+        "name": "Bhadrakali Sishu Udyan",
+        "name:bn": "ভদ্রকালী শিশু উদ্যান",
+        "opening_hours": "sunrise-sunset",
+        "operator": "Uttarpara Kotrung Municipality",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3433079,
+          22.6743978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/773038792",
+      "properties": {
+        "@id": "way/773038792",
+        "leisure": "park",
+        "name": "Bharat Cooperative Housing Society Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2195478,
+          22.5700788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/784130116",
+      "properties": {
+        "@id": "way/784130116",
+        "leisure": "park",
+        "name": "Sammelan Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3413629,
+          22.5989172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/784130117",
+      "properties": {
+        "@id": "way/784130117",
+        "leisure": "park",
+        "name": "Salkia Sanghashree Maidan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3475575,
+          22.5989633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/784133007",
+      "properties": {
+        "@id": "way/784133007",
+        "leisure": "park",
+        "name": "Bakultala Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.320761,
+          22.5806427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/784133008",
+      "properties": {
+        "@id": "way/784133008",
+        "leisure": "park",
+        "name": "Bhudeb Kalyan Trust Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3187119,
+          22.5816899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/791208197",
+      "properties": {
+        "@id": "way/791208197",
+        "leisure": "park",
+        "name": "Bankim Chandra Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3293532,
+          22.5852232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/803411962",
+      "properties": {
+        "@id": "way/803411962",
+        "leisure": "park",
+        "name": "Howrah Duranta Sangha",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3148586,
+          22.5800731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/803411963",
+      "properties": {
+        "@id": "way/803411963",
+        "addr:city": "howrah",
+        "addr:housenumber": "72 & 77",
+        "addr:postcode": "711104",
+        "addr:street": "Swami Vivekananda Road",
+        "amenity": "school",
+        "name": "Howrah Vivekananda Institution",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3166798,
+          22.5779656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/810467851",
+      "properties": {
+        "@id": "way/810467851",
+        "landuse": "recreation_ground",
+        "leisure": "park",
+        "name": "Chakraberia Trikon Park",
+        "operator": "কলকাতা পৌরসংস্থা",
+        "operator:bn": "কলকাতা পৌরসংস্থা",
+        "operator:en": "Kolkata Municipal Corporation",
+        "operator:short": "KMC",
+        "operator:type": "government",
+        "operator:wikidata": "Q3350560",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3519635,
+          22.5336652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/812906603",
+      "properties": {
+        "@id": "way/812906603",
+        "amenity": "school",
+        "name": "Podra Mahakali Vidyalaya",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2688218,
+          22.5605086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/812927740",
+      "properties": {
+        "@id": "way/812927740",
+        "leisure": "recreation_ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2682398,
+          22.5598033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/813424245",
+      "properties": {
+        "@id": "way/813424245",
+        "landuse": "greenery",
+        "leisure": "park",
+        "name": "Beltala Sishu Uddyan",
+        "operator": "কলকাতা পৌরসংস্থা",
+        "operator:bn": "কলকাতা পৌরসংস্থা",
+        "operator:en": "Kolkata Municipal Corporation",
+        "operator:short": "KMC",
+        "operator:type": "government",
+        "operator:wikidata": "Q3350560",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.350618,
+          22.5257248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/815733904",
+      "properties": {
+        "@id": "way/815733904",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2756241,
+          22.5579196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/817577266",
+      "properties": {
+        "@id": "way/817577266",
+        "leisure": "park",
+        "name": "Jheel par",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2838819,
+          22.582293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/817577267",
+      "properties": {
+        "@id": "way/817577267",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2813589,
+          22.5824637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/817577271",
+      "properties": {
+        "@id": "way/817577271",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2888043,
+          22.584814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/817577275",
+      "properties": {
+        "@id": "way/817577275",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2577521,
+          22.5876608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/818073223",
+      "properties": {
+        "@id": "way/818073223",
+        "leisure": "park",
+        "reservoir_type": "water_storage",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2697505,
+          22.5664584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/818075775",
+      "properties": {
+        "@id": "way/818075775",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.269496,
+          22.5668405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/821079598",
+      "properties": {
+        "@id": "way/821079598",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2620456,
+          22.5780773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/822679207",
+      "properties": {
+        "@id": "way/822679207",
+        "leisure": "park",
+        "name": "Jagacha Colony Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2848885,
+          22.5919849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/822681387",
+      "properties": {
+        "@id": "way/822681387",
+        "leisure": "park",
+        "name": "colony",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2858941,
+          22.5748692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/826822387",
+      "properties": {
+        "@id": "way/826822387",
+        "leisure": "park",
+        "name": "Bapu Udyan",
+        "name:en": "Bapu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3428707,
+          22.5808834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/826822388",
+      "properties": {
+        "@id": "way/826822388",
+        "leisure": "park",
+        "name": "Bapu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3423866,
+          22.5799651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/827217104",
+      "properties": {
+        "@id": "way/827217104",
+        "leisure": "park",
+        "name": "Dr. Bhimrao Ambedkar Park",
+        "name:etymology:wikidata": "Q231690",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3398556,
+          22.5866805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/832948957",
+      "properties": {
+        "@id": "way/832948957",
+        "leisure": "park",
+        "name": "Netaji Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2857289,
+          22.5826276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/833631693",
+      "properties": {
+        "@id": "way/833631693",
+        "amenity": "school",
+        "building": "yes",
+        "name": "Podra G.S.F.P School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2704455,
+          22.5678748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/833631800",
+      "properties": {
+        "@id": "way/833631800",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2704255,
+          22.5677627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732277",
+      "properties": {
+        "@id": "way/837732277",
+        "leisure": "park",
+        "name": "Bhooter math",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2823892,
+          22.5923994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732278",
+      "properties": {
+        "@id": "way/837732278",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2807369,
+          22.5953736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732279",
+      "properties": {
+        "@id": "way/837732279",
+        "leisure": "park",
+        "name": "jheel par",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2799201,
+          22.580452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732281",
+      "properties": {
+        "@id": "way/837732281",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.294963,
+          22.5796804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732282",
+      "properties": {
+        "@id": "way/837732282",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2928912,
+          22.5788295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/837732283",
+      "properties": {
+        "@id": "way/837732283",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2910201,
+          22.579068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/840407734",
+      "properties": {
+        "@id": "way/840407734",
+        "leisure": "park",
+        "name": "Pitchkol Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2359018,
+          22.5740201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/840567473",
+      "properties": {
+        "@id": "way/840567473",
+        "leisure": "park",
+        "name": "Howrah Vivekananda Shishu Udyan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.315532,
+          22.5761671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841411680",
+      "properties": {
+        "@id": "way/841411680",
+        "leisure": "park",
+        "name": "BDFC Football Ground.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3186629,
+          22.6013461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841413828",
+      "properties": {
+        "@id": "way/841413828",
+        "leisure": "park",
+        "name": "Chatterjee Para Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3189172,
+          22.5979134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841413829",
+      "properties": {
+        "@id": "way/841413829",
+        "leisure": "park",
+        "name": "Apu Durga Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3203319,
+          22.5989032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841421396",
+      "properties": {
+        "@id": "way/841421396",
+        "leisure": "park",
+        "name": "Rathtala Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3214777,
+          22.6000587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841476968",
+      "properties": {
+        "@id": "way/841476968",
+        "leisure": "park",
+        "name": "Shayamacharan Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3195585,
+          22.603382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841478218",
+      "properties": {
+        "@id": "way/841478218",
+        "leisure": "park",
+        "name": "Chatra Dal playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3230781,
+          22.6050093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841481344",
+      "properties": {
+        "@id": "way/841481344",
+        "leisure": "park",
+        "name": "Malirbagan Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3216958,
+          22.6076261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841481345",
+      "properties": {
+        "@id": "way/841481345",
+        "leisure": "park",
+        "name": "Bantra Young Athaletic Club",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3180009,
+          22.5927838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841481655",
+      "properties": {
+        "@id": "way/841481655",
+        "leisure": "park",
+        "name": "Subal Srimti Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3220891,
+          22.5935118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841482221",
+      "properties": {
+        "@id": "way/841482221",
+        "leisure": "park",
+        "name": "Barrack Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3207186,
+          22.5887401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841483702",
+      "properties": {
+        "@id": "way/841483702",
+        "leisure": "park",
+        "name": "Bantra Cricket Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3163537,
+          22.5893523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841483939",
+      "properties": {
+        "@id": "way/841483939",
+        "leisure": "park",
+        "name": "West Bengal Club Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3149729,
+          22.588612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841485419",
+      "properties": {
+        "@id": "way/841485419",
+        "leisure": "park",
+        "name": "Lakkhi Ratan Sukhla Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3117862,
+          22.5883664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841486000",
+      "properties": {
+        "@id": "way/841486000",
+        "leisure": "park",
+        "name": "Hillol Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3113269,
+          22.5863286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841488381",
+      "properties": {
+        "@id": "way/841488381",
+        "leisure": "park",
+        "name": "Rupak Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3136714,
+          22.5887737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841488898",
+      "properties": {
+        "@id": "way/841488898",
+        "leisure": "park",
+        "name": "Saraswati Club ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3149142,
+          22.5867998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841489697",
+      "properties": {
+        "@id": "way/841489697",
+        "leisure": "park",
+        "name": "Vivekananda Athaletic Club",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3175651,
+          22.5837747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841490682",
+      "properties": {
+        "@id": "way/841490682",
+        "leisure": "park",
+        "name": "Outside of Dumurjola Stadium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3092856,
+          22.5778511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841490758",
+      "properties": {
+        "@id": "way/841490758",
+        "leisure": "park",
+        "name": "Pradip Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3075592,
+          22.5775095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841491428",
+      "properties": {
+        "@id": "way/841491428",
+        "leisure": "park",
+        "name": "Belepole Students athaletic club",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3054614,
+          22.5781118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841492658",
+      "properties": {
+        "@id": "way/841492658",
+        "leisure": "park",
+        "name": "Netaji Balak Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3162645,
+          22.5865533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841493122",
+      "properties": {
+        "@id": "way/841493122",
+        "leisure": "park",
+        "name": "Netaji Sishu Uddan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.313005,
+          22.5862563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841622698",
+      "properties": {
+        "@id": "way/841622698",
+        "leisure": "park",
+        "name": "Bharat Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3130456,
+          22.598729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841623034",
+      "properties": {
+        "@id": "way/841623034",
+        "leisure": "park",
+        "name": "Alamohon Das Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3097792,
+          22.5996185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841626284",
+      "properties": {
+        "@id": "way/841626284",
+        "leisure": "park",
+        "name": "Alamohon Das Indor Stadium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3106631,
+          22.6024467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841626862",
+      "properties": {
+        "@id": "way/841626862",
+        "leisure": "park",
+        "name": "Banalata Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3094852,
+          22.6035587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841628944",
+      "properties": {
+        "@id": "way/841628944",
+        "leisure": "park",
+        "name": "Arati Coton Mill Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3064552,
+          22.601451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841631286",
+      "properties": {
+        "@id": "way/841631286",
+        "leisure": "park",
+        "name": "Siakhal Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3064237,
+          22.5997006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841633717",
+      "properties": {
+        "@id": "way/841633717",
+        "leisure": "park",
+        "name": "Kalitala Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3041308,
+          22.6005521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841637197",
+      "properties": {
+        "@id": "way/841637197",
+        "leisure": "park",
+        "name": "Nabin Krira Sangsad",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3052449,
+          22.6054253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841640713",
+      "properties": {
+        "@id": "way/841640713",
+        "leisure": "park",
+        "name": "Nabajagaran Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3003432,
+          22.6030445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841641517",
+      "properties": {
+        "@id": "way/841641517",
+        "leisure": "park",
+        "name": "Subuj Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3020815,
+          22.6034723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841642161",
+      "properties": {
+        "@id": "way/841642161",
+        "leisure": "park",
+        "name": "Green Patch Area",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2999278,
+          22.6048527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841642821",
+      "properties": {
+        "@id": "way/841642821",
+        "leisure": "park",
+        "name": "Kashipur Sporing Club Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3095549,
+          22.6044992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841643502",
+      "properties": {
+        "@id": "way/841643502",
+        "leisure": "park",
+        "name": "Kashipur durga utshab committee",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.310231,
+          22.6057572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841645148",
+      "properties": {
+        "@id": "way/841645148",
+        "leisure": "park",
+        "name": "Kashipur Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3081167,
+          22.6072789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841646200",
+      "properties": {
+        "@id": "way/841646200",
+        "leisure": "park",
+        "name": "Sport Ground ATI",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3051409,
+          22.6083694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841647093",
+      "properties": {
+        "@id": "way/841647093",
+        "leisure": "park",
+        "name": "Avijatri Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3141652,
+          22.6067354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841801928",
+      "properties": {
+        "@id": "way/841801928",
+        "leisure": "park",
+        "name": "Green Patch area",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3155014,
+          22.5919368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841802330",
+      "properties": {
+        "@id": "way/841802330",
+        "leisure": "park",
+        "name": "kadamtala sports ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3150547,
+          22.5927626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841804979",
+      "properties": {
+        "@id": "way/841804979",
+        "leisure": "park",
+        "name": "HIT Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3123325,
+          22.586815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841805314",
+      "properties": {
+        "@id": "way/841805314",
+        "leisure": "park",
+        "name": "Kasundia Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3109247,
+          22.5825981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841807161",
+      "properties": {
+        "@id": "way/841807161",
+        "leisure": "park",
+        "name": "Gulmohar Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3386644,
+          22.5880974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/841839796",
+      "properties": {
+        "@id": "way/841839796",
+        "leisure": "park",
+        "name": "Outside of Dumurjola Indor Stadium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3094191,
+          22.5804831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/842485957",
+      "properties": {
+        "@id": "way/842485957",
+        "leisure": "park",
+        "name": "Arati Cotton Mill outside",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3088348,
+          22.6012465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/842486250",
+      "properties": {
+        "@id": "way/842486250",
+        "leisure": "park",
+        "name": "Outside of Arati Cotton Mill",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3073346,
+          22.6024753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933647",
+      "properties": {
+        "@id": "way/848933647",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2832328,
+          22.5877945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933648",
+      "properties": {
+        "@id": "way/848933648",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2834347,
+          22.5882743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933649",
+      "properties": {
+        "@id": "way/848933649",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2815917,
+          22.5872657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933650",
+      "properties": {
+        "@id": "way/848933650",
+        "leisure": "park",
+        "name": "Press Quarter Ground 1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2831215,
+          22.5903784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933651",
+      "properties": {
+        "@id": "way/848933651",
+        "leisure": "park",
+        "name": "Press Quarter ground 2",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2833187,
+          22.5899033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933652",
+      "properties": {
+        "@id": "way/848933652",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2793726,
+          22.5931489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933653",
+      "properties": {
+        "@id": "way/848933653",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.273719,
+          22.5878763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933654",
+      "properties": {
+        "@id": "way/848933654",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2723484,
+          22.5881958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933659",
+      "properties": {
+        "@id": "way/848933659",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2782868,
+          22.5842991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/848933660",
+      "properties": {
+        "@id": "way/848933660",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2774405,
+          22.5839427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/852434943",
+      "properties": {
+        "@id": "way/852434943",
+        "leisure": "park",
+        "name": "Bandhu Milan Sangha Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3148994,
+          22.5945622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332752",
+      "properties": {
+        "@id": "way/855332752",
+        "leisure": "park",
+        "name": "National Place playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2928788,
+          22.5805014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332754",
+      "properties": {
+        "@id": "way/855332754",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2815822,
+          22.5894267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332755",
+      "properties": {
+        "@id": "way/855332755",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2826053,
+          22.5896744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332756",
+      "properties": {
+        "@id": "way/855332756",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2824124,
+          22.5902675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332757",
+      "properties": {
+        "@id": "way/855332757",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.280525,
+          22.5892544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332767",
+      "properties": {
+        "@id": "way/855332767",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2714328,
+          22.5819239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332768",
+      "properties": {
+        "@id": "way/855332768",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2717016,
+          22.5814335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/855332771",
+      "properties": {
+        "@id": "way/855332771",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2718436,
+          22.580857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/860380489",
+      "properties": {
+        "@id": "way/860380489",
+        "leisure": "park",
+        "name": "Jhorehat Math",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.236082,
+          22.5769077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/860383041",
+      "properties": {
+        "@id": "way/860383041",
+        "leisure": "park",
+        "name": "Marowari bagan",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2392325,
+          22.5776235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862955048",
+      "properties": {
+        "@id": "way/862955048",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3430748,
+          22.6628568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862955720",
+      "properties": {
+        "@id": "way/862955720",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3434102,
+          22.6638981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862962294",
+      "properties": {
+        "@id": "way/862962294",
+        "leisure": "park",
+        "name": "Chamrail Das Para Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2979596,
+          22.6377132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862962366",
+      "properties": {
+        "@id": "way/862962366",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2968139,
+          22.6332797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862962490",
+      "properties": {
+        "@id": "way/862962490",
+        "leisure": "park",
+        "name": "Boro Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3042131,
+          22.618743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862962536",
+      "properties": {
+        "@id": "way/862962536",
+        "leisure": "park",
+        "name": "Camper Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.305278,
+          22.6155986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/862966463",
+      "properties": {
+        "@id": "way/862966463",
+        "leisure": "park",
+        "name": "Kona Khelaghor Songher Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.305166,
+          22.6220623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/863077363",
+      "properties": {
+        "@id": "way/863077363",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3447612,
+          22.6564601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/863077741",
+      "properties": {
+        "@id": "way/863077741",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3342847,
+          22.6532761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/866086006",
+      "properties": {
+        "@id": "way/866086006",
+        "leisure": "park",
+        "name": "quartes playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3245237,
+          22.5993078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/880889243",
+      "properties": {
+        "@id": "way/880889243",
+        "leisure": "park",
+        "name": "Jol Tank Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.246956,
+          22.5672139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/880889574",
+      "properties": {
+        "@id": "way/880889574",
+        "leisure": "park",
+        "name": "Chittaranjan Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2444822,
+          22.5686029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/884754540",
+      "properties": {
+        "@id": "way/884754540",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3086269,
+          22.6091997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/884755054",
+      "properties": {
+        "@id": "way/884755054",
+        "leisure": "park",
+        "name": "Dasnagar Children Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3107094,
+          22.6019463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/884813680",
+      "properties": {
+        "@id": "way/884813680",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2968964,
+          22.6063943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/886251284",
+      "properties": {
+        "@id": "way/886251284",
+        "leisure": "park",
+        "name": "Statue of the great alamohon das",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3090027,
+          22.5988673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/888531444",
+      "properties": {
+        "@id": "way/888531444",
+        "leisure": "park",
+        "name": "Ramkrishna Sporsting Club Park and Football Playground.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2888577,
+          22.6768226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/888539238",
+      "properties": {
+        "@id": "way/888539238",
+        "leisure": "park",
+        "name": "Jagadishpur Bazaar ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2816021,
+          22.6483968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/910345124",
+      "properties": {
+        "@id": "way/910345124",
+        "leisure": "park",
+        "name": "Andul Rajmaath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2355604,
+          22.582583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/910369551",
+      "properties": {
+        "@id": "way/910369551",
+        "leisure": "park",
+        "name": "Rajrajeshwari Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2313632,
+          22.5796121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/918823825",
+      "properties": {
+        "@id": "way/918823825",
+        "leisure": "park",
+        "name": "HIT Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3124401,
+          22.5869132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/918823826",
+      "properties": {
+        "@id": "way/918823826",
+        "leisure": "park",
+        "name": "Outside of Dumurjola Indor Stadium",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3074021,
+          22.5820865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/936379369",
+      "properties": {
+        "@id": "way/936379369",
+        "leisure": "park",
+        "name": "Mourigram Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2545644,
+          22.5798895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/936381213",
+      "properties": {
+        "@id": "way/936381213",
+        "leisure": "park",
+        "name": "Charaktala Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2487777,
+          22.5799938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/936383122",
+      "properties": {
+        "@id": "way/936383122",
+        "leisure": "park",
+        "name": "Dulliya Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2563197,
+          22.5790759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/964191532",
+      "properties": {
+        "@id": "way/964191532",
+        "leisure": "park",
+        "name": "play ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3589762,
+          22.660096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/964194489",
+      "properties": {
+        "@id": "way/964194489",
+        "leisure": "park",
+        "name": "Nimtala math",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3601053,
+          22.6639499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/964195827",
+      "properties": {
+        "@id": "way/964195827",
+        "leisure": "park",
+        "name": "Subodh Chandra Roy Park (Chatal Math)",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3597659,
+          22.6651131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/965743075",
+      "properties": {
+        "@id": "way/965743075",
+        "leisure": "park",
+        "name": "fields",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.316135,
+          22.5979396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/965745731",
+      "properties": {
+        "@id": "way/965745731",
+        "leisure": "park",
+        "name": "field",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.31344,
+          22.6078955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/965884834",
+      "properties": {
+        "@id": "way/965884834",
+        "leisure": "park",
+        "name": "Quaters Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3196972,
+          22.5910731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/968189300",
+      "properties": {
+        "@id": "way/968189300",
+        "leisure": "park",
+        "name": "dasnagar field",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3053507,
+          22.5972597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/980991208",
+      "properties": {
+        "@id": "way/980991208",
+        "leisure": "park",
+        "name": "Polli Songher Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3024206,
+          22.6149195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981308586",
+      "properties": {
+        "@id": "way/981308586",
+        "leisure": "park",
+        "name": "Kona Kishore Pragati Songher Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3079061,
+          22.6171815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981310607",
+      "properties": {
+        "@id": "way/981310607",
+        "leisure": "park",
+        "name": "Children Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2928639,
+          22.6243785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981311107",
+      "properties": {
+        "@id": "way/981311107",
+        "leisure": "park",
+        "name": "Children Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2927579,
+          22.6245202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981311187",
+      "properties": {
+        "@id": "way/981311187",
+        "leisure": "park",
+        "name": "Children Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2939296,
+          22.6249609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981311651",
+      "properties": {
+        "@id": "way/981311651",
+        "leisure": "park",
+        "name": "Children Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2930408,
+          22.6247863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981334627",
+      "properties": {
+        "@id": "way/981334627",
+        "leisure": "park",
+        "name": "Kona Agradut Sangher Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3072231,
+          22.6139133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981335902",
+      "properties": {
+        "@id": "way/981335902",
+        "leisure": "park",
+        "name": "Tirupati Balaji Community Hall Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3101886,
+          22.6124021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981338492",
+      "properties": {
+        "@id": "way/981338492",
+        "leisure": "park",
+        "name": "Biradingi Tarun Bahini Club Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3124047,
+          22.6142121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981348170",
+      "properties": {
+        "@id": "way/981348170",
+        "leisure": "park",
+        "name": "Pocha Khaal Maath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3132069,
+          22.6124956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/981349179",
+      "properties": {
+        "@id": "way/981349179",
+        "leisure": "park",
+        "name": "Sanghati Club Ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3154404,
+          22.6110477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/999182964",
+      "properties": {
+        "@id": "way/999182964",
+        "leisure": "park",
+        "name": "Baksara Corporate Cluub Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2892367,
+          22.57706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/999202793",
+      "properties": {
+        "@id": "way/999202793",
+        "leisure": "park",
+        "name": "Baksara Water Tank Playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2916532,
+          22.5774136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1131229990",
+      "properties": {
+        "@id": "way/1131229990",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "17",
+        "addr:postcode": "700071",
+        "addr:street": "Lord Sinha Road",
+        "amenity": "school",
+        "check_date": "2026-03-22",
+        "grades": "1-12",
+        "landuse": "education",
+        "name": "Sakhawat Memorial Govt. Girls' High School",
+        "name:etymology:wikidata": "Q467083",
+        "operator": "Government of West Bengal",
+        "operator:type": "government",
+        "religion": "none",
+        "school:gender": "female",
+        "wikidata": "Q23013854",
+        "wikipedia": "en:Sakhawat Memorial Govt. Girls' High School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3494987,
+          22.5446088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1186025286",
+      "properties": {
+        "@id": "node/1186025286",
+        "amenity": "police",
+        "name": "Kolkata Police Headquarters",
+        "name:en": "Kolkata Police Headquarters"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3524126,
+          22.5725398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1340032894",
+      "properties": {
+        "@id": "way/1340032894",
+        "alt_name": "Surendranath Park",
+        "leisure": "park",
+        "name": "Curzon Park",
+        "name:etymology:wikidata": "Q271878",
+        "wikidata": "Q68476643",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3496904,
+          22.5649675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1392269668",
+      "properties": {
+        "@id": "way/1392269668",
+        "addr:city": "Kolkata",
+        "leisure": "park",
+        "name": "ground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3406982,
+          22.5393555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1484471445",
+      "properties": {
+        "@id": "way/1484471445",
+        "addr:district": "Howrah",
+        "addr:postcode": "711204",
+        "addr:street": "21/A, Agrasain St, Liluah",
+        "amenity": "school",
+        "education": "school",
+        "name": "Agrasain Boys School",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3448598,
+          22.6190605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1550768842",
+      "properties": {
+        "@id": "way/1550768842",
+        "addr:city": "Salkia",
+        "addr:district": "Howrah",
+        "addr:postcode": "711106",
+        "addr:street": "Grand Trunk Road",
+        "leisure": "park",
+        "name": "Jatadhari Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3435379,
+          22.603968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1833423572",
+      "properties": {
+        "@id": "node/1833423572",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum",
+        "operator": "IndianOil Corporation Ltd",
+        "short_name": "HP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3248895,
+          22.522132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1860605880",
+      "properties": {
+        "@id": "node/1860605880",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3525906,
+          22.5246096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2252599719",
+      "properties": {
+        "@id": "node/2252599719",
+        "amenity": "fuel",
+        "name": "Arun Petrol Pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2432083,
+          22.5845163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471894120",
+      "properties": {
+        "@id": "node/2471894120",
+        "amenity": "police",
+        "check_date": "2023-09-30",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Bhowanipore Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3459941,
+          22.5266453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471894139",
+      "properties": {
+        "@id": "node/2471894139",
+        "amenity": "school",
+        "name": "The New Horizon High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3476941,
+          22.525445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471894146",
+      "properties": {
+        "@id": "node/2471894146",
+        "addr:housenumber": "92",
+        "addr:street": "Shyama Prasad Mukherjee Road",
+        "amenity": "college",
+        "check_date": "2023-09-30",
+        "name": "Asutosh College",
+        "opening_hours": "Mo-Fr 10:00-17:00; Sa 10:00-14:00",
+        "website": "https://www.asutoshcollege.in/",
+        "wikidata": "Q4811950",
+        "wikimedia_commons": "Category:Asutosh College",
+        "wikipedia": "en:Asutosh College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3461958,
+          22.5254231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471894149",
+      "properties": {
+        "@id": "node/2471894149",
+        "addr:housenumber": "92",
+        "addr:street": "Shyama Prasad Mukherjee Road",
+        "amenity": "college",
+        "check_date": "2023-09-30",
+        "description": "This a women's college",
+        "name": "Jogomaya Devi College",
+        "opening_hours": "Mo-Fr 06:30-11:00; Sa 06:30-09:00",
+        "website": "https://www.jogamayadevicollege.org/",
+        "wikidata": "Q6214685",
+        "wikipedia": "en:Jogamaya Devi College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.346205,
+          22.5253148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471894152",
+      "properties": {
+        "@id": "node/2471894152",
+        "addr:housenumber": "92",
+        "addr:street": "Shyama Prasad Mukherjee Road",
+        "amenity": "college",
+        "name": "Shyama Prasad College",
+        "name:etymology:wikidata": "Q3344992",
+        "opening_hours": "Mo-Fr 15:30-21:30; Sa 15:30-18:30",
+        "website": "https://www.syamaprasadcollege.in/contents/view/college-hours"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3462101,
+          22.5252052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471903965",
+      "properties": {
+        "@id": "node/2471903965",
+        "amenity": "college"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3458247,
+          22.5256923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471903966",
+      "properties": {
+        "@id": "node/2471903966",
+        "amenity": "college"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.345499,
+          22.5248981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2471903967",
+      "properties": {
+        "@id": "node/2471903967",
+        "amenity": "fuel",
+        "building": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3455882,
+          22.5278661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2813667209",
+      "properties": {
+        "@id": "node/2813667209",
+        "addr:city": "Kolkata",
+        "addr:housenumber": "133/2",
+        "addr:postcode": "700013",
+        "addr:street": "Surendra Nath Banerjee Road",
+        "amenity": "police",
+        "check_date": "2026-03-22",
+        "name": "New Market Police Station",
+        "phone": "+913322177397",
+        "source": "http://www.kolkatapolice.gov.in/",
+        "website": "http://www.kolkatapolice.gov.in/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3541137,
+          22.5627183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3324142934",
+      "properties": {
+        "@id": "node/3324142934",
+        "amenity": "police",
+        "name": "Jorabagan Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.356043,
+          22.5931156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4393356789",
+      "properties": {
+        "@id": "node/4393356789",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "compressed_air": "yes",
+        "name": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3535578,
+          22.5493149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4868040723",
+      "properties": {
+        "@id": "node/4868040723",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "brand:wikipedia": "en:Bharat Petroleum",
+        "check_date": "2023-10-04",
+        "name": "Bharat Petroleum",
+        "name:en": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3560088,
+          22.5498214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4868040823",
+      "properties": {
+        "@id": "node/4868040823",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "compressed_air": "yes",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum",
+        "short_name": "HP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3542235,
+          22.5513864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4891338224",
+      "properties": {
+        "@id": "node/4891338224",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2026-03-22",
+        "name": "Bharat Petroleum",
+        "name:en": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3588968,
+          22.5612312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5809580153",
+      "properties": {
+        "@id": "node/5809580153",
+        "amenity": "college",
+        "name": "Academy of finr Arts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3457358,
+          22.5445584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6135360360",
+      "properties": {
+        "@id": "node/6135360360",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "compressed_air": "yes",
+        "name": "Indian Oil",
+        "toilets": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.353021,
+          22.5530094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6135361871",
+      "properties": {
+        "@id": "node/6135361871",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "compressed_air": "no",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum",
+        "short_name": "HP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3530567,
+          22.5478778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6135361872",
+      "properties": {
+        "@id": "node/6135361872",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3515791,
+          22.54208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6135362109",
+      "properties": {
+        "@id": "node/6135362109",
+        "addr:housenumber": "63",
+        "addr:postcode": "700016",
+        "addr:street": "Park Street",
+        "amenity": "school",
+        "name": "Jewish Girls' School",
+        "operator": "Emunah Calcutta Jewish Trust"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3545701,
+          22.5528356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6135363494",
+      "properties": {
+        "@id": "node/6135363494",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "check_date": "2026-03-22",
+        "name": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3578473,
+          22.5407554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6143232537",
+      "properties": {
+        "@id": "node/6143232537",
+        "addr:city": "Kolkata",
+        "addr:postcode": "700023",
+        "addr:street": "Karl Marx Sarani",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "brand:wikipedia": "en:Bharat Petroleum",
+        "name": "Bharat Petroleum",
+        "opening_hours": "24/7",
+        "self_service": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3182352,
+          22.5388869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6147021003",
+      "properties": {
+        "@id": "node/6147021003",
+        "addr:city": "Kolkata",
+        "addr:street": "Park Street",
+        "amenity": "police",
+        "name": "Park Street Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3564067,
+          22.5516265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6520727185",
+      "properties": {
+        "@id": "node/6520727185",
+        "amenity": "fuel",
+        "check_date": "2026-03-22",
+        "name": "India Tradeing Petrol Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3492589,
+          22.5412219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6541624088",
+      "properties": {
+        "@id": "node/6541624088",
+        "amenity": "school",
+        "name": "Loreto School",
+        "wikidata": "Q6680900",
+        "wikipedia": "en:Loreto College, Kolkata"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3526693,
+          22.5496347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6700889660",
+      "properties": {
+        "@id": "node/6700889660",
+        "addr:city": "Kolkata",
+        "addr:postcode": "700023",
+        "addr:street": "Dock Eastern Boundary Road",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "brand:wikipedia": "en:Indian Oil Corporation",
+        "name": "Indian Oil",
+        "opening_hours": "24/7",
+        "self_service": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3171278,
+          22.5381004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7053793926",
+      "properties": {
+        "@id": "node/7053793926",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3557671,
+          22.5538259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7202548451",
+      "properties": {
+        "@id": "node/7202548451",
+        "amenity": "police",
+        "name": "Nadial Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2605445,
+          22.5551465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7592914055",
+      "properties": {
+        "@id": "node/7592914055",
+        "amenity": "school",
+        "name": "Podra Mahakali Vidyalaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2687635,
+          22.5604779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7990017085",
+      "properties": {
+        "@id": "node/7990017085",
+        "addr:postcode": "711114",
+        "addr:street": "Kona, Benaras Road",
+        "amenity": "school",
+        "name": "Kona High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3046618,
+          22.6166525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8418366754",
+      "properties": {
+        "@id": "node/8418366754",
+        "amenity": "school",
+        "name": "Makhla High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3386475,
+          22.6708517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/8922175617",
+      "properties": {
+        "@id": "node/8922175617",
+        "addr:postcode": "700024",
+        "addr:street": "Garden Reach Road",
+        "amenity": "fuel",
+        "name": "61 No Petrol Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2945171,
+          22.54619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9121149164",
+      "properties": {
+        "@id": "node/9121149164",
+        "leisure": "park",
+        "name": "Millennium Park Gate 1",
+        "name:en": "Millennium Park Gate 1",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "opening_hours:covid19": "closed",
+        "operator": "govt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3440035,
+          22.5718281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9209803093",
+      "properties": {
+        "@id": "node/9209803093",
+        "leisure": "park",
+        "name": "Children's Park beside Sainik Sangha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2856173,
+          22.5876585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9609217317",
+      "properties": {
+        "@id": "node/9609217317",
+        "addr:housenumber": "13",
+        "addr:postcode": "700012",
+        "addr:street": "Kapilatola Ln",
+        "amenity": "police",
+        "name": "Bowbazar police station",
+        "opening_hours": "24/7",
+        "phone": "8100796446"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3566114,
+          22.569139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9609217417",
+      "properties": {
+        "@id": "node/9609217417",
+        "addr:housenumber": "42",
+        "addr:postcode": "700054",
+        "addr:street": "Chittaranjan Avenue",
+        "amenity": "police",
+        "check_date": "2026-03-22",
+        "name": "Hare Police Station",
+        "name:en": "Hare Police Station",
+        "phone": "03322118760,03322150100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.356961,
+          22.5688343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9911020517",
+      "properties": {
+        "@id": "node/9911020517",
+        "amenity": "police",
+        "name": "Exide South Traffic Guard Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3469829,
+          22.5420398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9911020617",
+      "properties": {
+        "@id": "node/9911020617",
+        "amenity": "police",
+        "check_date": "2026-03-22",
+        "name": "Maidan police station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3471124,
+          22.5420279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11521235520",
+      "properties": {
+        "@id": "node/11521235520",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil Petrol Pump"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3362661,
+          22.5284275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11736253669",
+      "properties": {
+        "@id": "node/11736253669",
+        "addr:housenumber": "9B",
+        "addr:postcode": "700073",
+        "addr:street": "Bolai Dutta Street",
+        "amenity": "school",
+        "name": "Md Jan Higher Secondary School",
+        "opening_hours": "Mo-Sa 06:00-04:30",
+        "website": "http://mdjanschool.org.in/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3572206,
+          22.5767656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11944136006",
+      "properties": {
+        "@id": "node/11944136006",
+        "amenity": "fuel",
+        "brand": "Hindustan Petroleum",
+        "brand:wikidata": "Q1619375",
+        "name": "HP",
+        "official_name": "Hindustan Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3132396,
+          22.5440552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12088322220",
+      "properties": {
+        "@id": "node/12088322220",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum, Petrol Pump -Imperial Petrol Service Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.358668,
+          22.5866768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12133241425",
+      "properties": {
+        "@id": "node/12133241425",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3427695,
+          22.5236192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12133903489",
+      "properties": {
+        "@id": "node/12133903489",
+        "amenity": "fuel",
+        "brand": "Bharat Petroleum",
+        "brand:wikidata": "Q854826",
+        "name": "Bharat Petroleum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3318583,
+          22.5293502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12133907038",
+      "properties": {
+        "@id": "node/12133907038",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "name": "Indian Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3412589,
+          22.5680341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136509180",
+      "properties": {
+        "@id": "node/12136509180",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3433026,
+          22.6057202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136509181",
+      "properties": {
+        "@id": "node/12136509181",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3431755,
+          22.5914261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136521841",
+      "properties": {
+        "@id": "node/12136521841",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3397116,
+          22.5874833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136552129",
+      "properties": {
+        "@id": "node/12136552129",
+        "amenity": "fuel",
+        "brand": "HP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3460845,
+          22.6128246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136553875",
+      "properties": {
+        "@id": "node/12136553875",
+        "amenity": "fuel",
+        "brand": "Indian Oil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3448551,
+          22.6095876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12136554820",
+      "properties": {
+        "@id": "node/12136554820",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3498748,
+          22.6247204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12428864716",
+      "properties": {
+        "@id": "node/12428864716",
+        "addr:housenumber": "102/A",
+        "addr:street": "R. S. Verma Road",
+        "amenity": "school",
+        "check_date": "2026-07-19",
+        "name": "Uttarpara Union Girls' High School",
+        "phone": "+91 33 2664 2445"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3417557,
+          22.6622498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12755685201",
+      "properties": {
+        "@id": "node/12755685201",
+        "leisure": "park",
+        "name": "Panchavati Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3573162,
+          22.6560285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12755685801",
+      "properties": {
+        "@id": "node/12755685801",
+        "amenity": "shelter",
+        "name": "Beltala Trimundi Dhyan Aasan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3576095,
+          22.657647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13299039247",
+      "properties": {
+        "@id": "node/13299039247",
+        "addr:full": "No 305/6, GT Road South, Naora, Shibpur, Howrah, Howrah, West Bengal, 711102",
+        "addr:postcode": "711102",
+        "addr:state": "West Bengal",
+        "amenity": "fuel",
+        "brand": "Indian Oil",
+        "brand:wikidata": "Q1289348",
+        "opening_hours": "Mo-Su 06:00-23:30",
+        "phone": "+919830028954",
+        "website": "https://locator.iocl.com/indianoil-akash-moni-service-station-petrol-pump-shibpur-howrah-195975/Home"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3194079,
+          22.5631895
+        ]
+      }
+    }
+  ]
+}
