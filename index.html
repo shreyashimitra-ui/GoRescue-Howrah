@@ -306,7 +306,7 @@ function grade(){
  const backup=fire.length>=3?fire.slice(1).sort((x,y)=>x.km-y.km)[0]:null;score.push({label:'F · Backup dispatch and model limitations',earned:(backup&&a.backup===backup.code?5:0)+(a.limits==='limits'?5:0),max:10});
  // Approved screenshot-based DEMONSTRATION key. These are competition reference
  // selections, not independent validation of real-world emergency decisions.
- const screenshotKey={lat:'22.595800',lng:'88.263600',f1:'FS-02',f2:'FS-04',f3:'FS-01',ft1:'18.9',ft2:'27.8',ft3:'29.7',fb:'FS-02',h1:'H-09',h2:'H-24',h3:'H-50',ht:'9.5',hc:'capacity',risk:'SC-07',riskj:'safe',block:'detour',change:'longer',verification:'field',backup:'FS-02',limits:'limits'};
+ const screenshotKey={lat:'22.595800',lng:'88.263600',f1:'FS-02',f2:'FS-04',f3:'FS-01',ft1:'18.9',ft2:'27.8',ft3:'29.7',fb:'FS-02',h1:'H-09',h2:'H-21',h3:'H-50',ht:'9.5',hc:'capacity',risk:'OP-112',riskj:'safe',block:'detour',change:'longer',verification:'field',backup:'FS-04',limits:'limits'};
  // Explicit per-question marks: 10 + 25 + 15 + 10 + 20 + 10 = 90.
  // No route-service success or hidden map interaction is needed for scoring.
  const screenshotWeights=[
